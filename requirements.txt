@@ -1,0 +1,7 @@
+bottle
+cheroot
+curl_cffi
+beautifulsoup4
+lxml
+marshmallow
+pytest

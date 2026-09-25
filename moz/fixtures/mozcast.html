@@ -1,0 +1,1822 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+      <title>MozCast - The Google Algorithm Weather Report</title>
+    
+      <meta name="description" content="MozCast is a weather report showing turbulence in the Google algorithm over the previous day. The hotter and stormier the weather, the more Google&#x27;s rankings changed.">
+    
+      <link rel="canonical" href="https://moz.com/mozcast">
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feedpress.me/mozblog">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+      <link rel="stylesheet" href="/svc/stargate/assets/styles/moz.1.76.3.min.css" type="text/css">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicon/moz-favicon-57.png?7345a55">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicon/moz-favicon-72.png?a5899ba">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicon/moz-favicon-114.png?8bde9a0">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicon/moz-favicon-144.png?905e67d">
+      <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="fb:page_id" content="8489236245">
+    <meta name="twitter:site" content="@Moz">
+    <meta name="twitter:creator" content="@Moz">
+    <meta property="twitter:account_id" content="15651700">
+    
+      <meta content="MozCast - The Google Algorithm Weather Report" property="og:title">
+      <meta content="MozCast is a weather report showing turbulence in the Google algorithm over the previous day. The hotter and stormier the weather, the more Google&#x27;s rankings changed." property="og:description">
+      <meta content="/mozcast/img/mozcast-social.png" property="og:image">
+      <meta content="1200" property="og:image:width">
+      <meta content="630" property="og:image:height">
+    
+    
+      <script>
+        window._mtm = {
+          config: {
+            team: 'inbound',
+            service: 'stargate',
+            env: "production"
+          }
+        }
+      </script>
+      <script src="https://moz.com/tags.js"></script>
+        <script src="/svc/stargate/assets/vendor/vue.min.js"></script>
+        <script src="/svc/stargate/assets/vendor/lodash.min.js"></script>
+      <script>
+        Vue.options.delimiters = ['${', '}'];
+      </script>
+    <meta name="referrer" content="origin-when-cross-origin">
+    
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@9.0.1/highcharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highcharts-vue"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css"/>
+</head>
+<body >
+  <div id="wrap" class="no-overflow">
+    <link href="https://moz.com/assets/dist/styles/reboot-7fe666a3.min.css" rel="stylesheet">
+    <link href="https://moz.com/assets/dist/styles/components/top-nav-aa2f3d6c.min.css" rel="stylesheet">
+    <link type="text/css" href="https://moz.com/assets/dist/styles/components/snippets-grid-77f24533.min.css" rel="stylesheet">
+    <script src="https://cdn.ziffstatic.com/jst/zdconsent.js" async></script>
+    <script>window.zdconsent = window.zdconsent || {'run': [], 'cmd':[], 'analytics':[], 'functional':[], 'social':[] };</script>
+    <script>var _mgn = _mgn || {};
+      _mgn = Object.assign(_mgn, {
+        env: "production",
+        hosts: {
+          moz: "https://moz.com",
+          ma: "https://analytics.moz.com",
+          rank: "https://analytics.moz.com/pro/research/rankings",
+          local: "https://moz.com/local",
+          localapp: "https://localapp.moz.com/en/app/moz",
+          lma: "https://analytics.moz.com/pro/local-market-analytics",
+          academy: "https://academy.moz.com"
+        },
+        urls: {
+          gateway_scripts: "https://moz.com/svc/gateway/dist/app.gateway.js",
+          gateway_stylesheets: "https://moz.com/svc/gateway/dist/styles.gateway.css",
+          forge: "https://moz.com/svc/forge/api.js"
+        },
+        fetch_user: true,
+      });</script>
+          
+    
+              <div id="mzr-top-nav" class="mzr-navbar-wrapper">
+          <a class="visually-hidden" href="#content" rel="noopener">Skip to content</a>
+          <nav class="mzr-container mzr-navbar mzr-navbar-expand-md" role="navigation" aria-label="Main navigation">
+            <a class="mzr-home-logo" title="Moz Home" href="https://moz.com/" tabindex='1'>
+              
+    <svg aria-labelledby="moz-logo-title-header" role="img" width="85" height="25">
+      <title id="moz-logo-title-header">Moz logo</title>
+      <path d="M71 16L82.99 3h-25.1c-.48.018-.866.4-.89.882v2.736C54.697 2.696 49.97 0 44.5 0 38.036 0 32.61 3.76 31 8.863V3h-4.38c-1.043.015-1.957.478-2.62 1.177l-8.498 9.325L7 4.177C6.34 3.477 5.427 3.015 4.383 3H0v19h5.117c.492-.024.863-.42.883-.91V12l9.5 10.5L25 12v9.09c.017.49.415.886.905.91H31v-6.863C32.61 20.24 38.036 24 44.5 24c7.732 0 14-5.373 14-12 0-1.038-.17-2.04-.46-3H69L57 22h25.104c.48-.018.872-.403.896-.884V16H71zm-26.452 1.96c-3.764 0-6.818-2.668-6.818-5.96 0-3.293 3.053-5.96 6.818-5.96 3.768 0 6.822 2.668 6.822 5.96s-3.053 5.96-6.822 5.96z"></path>
+    </svg>
+            </a>
+            <a title="Menu toggle" class="mzr-mobile-nav-toggle" href="#" aria-expanded="false" aria-controls="mobile-menu" tabindex="2">
+              <svg aria-labelledby="mobile-menu-open" class="mzr-nav-icon mzr-icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title id="mobile-menu-open">Menu open</title>
+                <path d="M24 3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1s.45-1 1-1h22c.55 0 1 .45 1 1zM24 12c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1s.45-1 1-1h22c.55 0 1 .45 1 1zM24 21c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1s.45-1 1-1h22c.55 0 1 .45 1 1z"></path>
+              </svg>
+              <svg aria-labelledby="mobile-menu-close" class="mzr-nav-icon mzr-icon-close mzr-icon-disabled" viewBox="0 0 24 24">
+                <title id="mobile-menu-close">Menu close</title>
+                <path d="M13.41 12L24 22.59 22.59 24 12 13.41 1.41 24 0 22.59 10.59 12 0 1.41 1.41 0 12 10.59 22.59 0 24 1.41z"></path>
+              </svg>
+            </a>
+            <div id="mzr-mobile-menu" class="mzr-nav-mobile mzr-navbar-nav">
+                        <form class="mzr-mobile-search" action="/search">
+                <input type="text" class="mzr-input-search" name="q" placeholder="Search...">
+                <button aria-labelledby="mobile-menu-search">
+                  <svg class="mzr-icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                    <title id="mobile-menu-search">Search</title>
+                    <path d="M18 16.94l-5.553-5.554C13.417 10.186 14 8.66 14 7c0-3.86-3.14-7-7-7S0 3.14 0 7s3.14 7 7 7c1.66 0 3.185-.584 4.386-1.553L16.94 18 18 16.94zM7 12.5c-3.032 0-5.5-2.467-5.5-5.5S3.968 1.5 7 1.5s5.5 2.467 5.5 5.5-2.468 5.5-5.5 5.5z"/>
+                  </svg>
+                </button>
+              </form>
+              <ul class="mzr-nav-mobile-menu js-nav-mobile-menu">
+                
+    
+    
+          
+          <li class="mzr-nav-item mzr-dropdown mzr-listmenu " aria-label="Products">
+        <a
+                  href="#"
+                class="mzr-dropdown-toggle-mobile"
+          title="Products"
+                  id="mzr-navbarDropdown-1025208"
+            role="button"
+            aria-controls="#products"
+            aria-expanded="false"
+            aria-label="Expand Products"
+                tabindex="-1"
+        >Products</a>
+    
+              <div id="products" class="mzr-dropdown-listmenu" aria-expanded="false">
+            <div class="mzr-row">
+              <ul class="mzr-col-12">
+                              
+                                                                            
+                  <li class="js-pro-only-swap">
+                    <a class="mzr-dropdown-item"
+                       title="Moz Pro"
+                                          href="https://moz.com/products/pro"
+                                      >Moz Pro</a>
+                  </li>
+                              
+                                                                                            
+                  <li class="hidden js-pro-only">
+                    <a class="mzr-dropdown-item"
+                       title="Moz Pro Home"
+                                          data-href="/home"
+                                      >Moz Pro Home</a>
+                  </li>
+                              
+                                                                            
+                  <li class="js-local-only-swap">
+                    <a class="mzr-dropdown-item"
+                       title="Moz Local"
+                                          href="https://moz.com/products/local"
+                                      >Moz Local</a>
+                  </li>
+                              
+                                                                                            
+                  <li class="hidden js-local-only">
+                    <a class="mzr-dropdown-item"
+                       title="Moz Local Home"
+                                          data-href="/home"
+                                      >Moz Local Home</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="STAT"
+                                          href="https://moz.com/products/stat"
+                                      >STAT</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Moz API"
+                                          href="https://moz.com/products/api"
+                                      >Moz API</a>
+                  </li>
+                              
+                                                                                            
+                  <li class="hidden js-api-only">
+                    <a class="mzr-dropdown-item"
+                       title="Moz API Home"
+                                          data-href="/api/dashboard/usage"
+                                      >Moz API Home</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Compare SEO Products"
+                                          href="https://moz.com/products"
+                                      >Compare SEO Products</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Moz Data"
+                                          href="https://moz.com/moz-data"
+                                      >Moz Data</a>
+                  </li>
+                          </ul>
+            </div>
+          </div>
+          </li>
+          
+          <li class="mzr-nav-item mzr-dropdown mzr-listmenu " aria-label="Free SEO Tools">
+        <a
+                  href="#"
+                class="mzr-dropdown-toggle-mobile"
+          title="Free SEO Tools"
+                  id="mzr-navbarDropdown-1025211"
+            role="button"
+            aria-controls="#free-seo-tools"
+            aria-expanded="false"
+            aria-label="Expand Free SEO Tools"
+                tabindex="-1"
+        >Free SEO Tools</a>
+    
+              <div id="free-seo-tools" class="mzr-dropdown-listmenu" aria-expanded="false">
+            <div class="mzr-row">
+              <ul class="mzr-col-12">
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Domain Analysis"
+                                          href="/domain-analysis"
+                                      >Domain Analysis</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Keyword Explorer"
+                                          href="https://moz.com/explorer"
+                                      >Keyword Explorer</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Link Explorer"
+                                          href="https://moz.com/link-explorer"
+                                      >Link Explorer</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Competitive Research"
+                                          href="/competitive-research"
+                                      >Competitive Research</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="MozBar"
+                                          href="https://moz.com/products/pro/seo-toolbar"
+                                      >MozBar</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="More Free SEO Tools"
+                                          href="https://moz.com/free-seo-tools"
+                                      >More Free SEO Tools</a>
+                  </li>
+                          </ul>
+            </div>
+          </div>
+          </li>
+          
+          <li class="mzr-nav-item mzr-dropdown mzr-listmenu " aria-label="Learn SEO">
+        <a
+                  href="#"
+                class="mzr-dropdown-toggle-mobile"
+          title="Learn SEO"
+                  id="mzr-navbarDropdown-1025214"
+            role="button"
+            aria-controls="#learn-seo"
+            aria-expanded="false"
+            aria-label="Expand Learn SEO"
+                tabindex="-1"
+        >Learn SEO</a>
+    
+              <div id="learn-seo" class="mzr-dropdown-listmenu" aria-expanded="false">
+            <div class="mzr-row">
+              <ul class="mzr-col-12">
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Beginner&#039;s Guide to SEO"
+                                          href="https://moz.com/beginners-guide-to-seo"
+                                      >Beginner&#039;s Guide to SEO</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="SEO Learning Center"
+                                          href="https://moz.com/learn/seo"
+                                      >SEO Learning Center</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Moz Academy"
+                                          href="https://moz.com/training"
+                                      >Moz Academy</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="MozCon"
+                                          href="/mozcon/"
+                                      >MozCon</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Webinars, Whitepapers, &amp; Guides"
+                                          href="https://moz.com/learn/seo/resources"
+                                      >Webinars, Whitepapers, &amp; Guides</a>
+                  </li>
+                          </ul>
+            </div>
+          </div>
+          </li>
+          
+          <li class="mzr-nav-item  " aria-label="Blog">
+        <a
+                  href="https://moz.com/blog"
+                class=""
+          title="Blog"
+                  aria-label="Blog"
+                tabindex="-1"
+        >Blog</a>
+    
+          </li>
+          
+          <li class="mzr-nav-item mzr-dropdown mzr-listmenu " aria-label="Why Moz">
+        <a
+                  href="#"
+                class="mzr-dropdown-toggle-mobile"
+          title="Why Moz"
+                  id="mzr-navbarDropdown-1025220"
+            role="button"
+            aria-controls="#why-moz"
+            aria-expanded="false"
+            aria-label="Expand Why Moz"
+                tabindex="-1"
+        >Why Moz</a>
+    
+              <div id="why-moz" class="mzr-dropdown-listmenu" aria-expanded="false">
+            <div class="mzr-row">
+              <ul class="mzr-col-12">
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Digital Marketers"
+                                          href="https://moz.com/digital-marketers"
+                                      >Digital Marketers</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Agency Solutions"
+                                          href="https://moz.com/agency-solutions"
+                                      >Agency Solutions</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Enterprise Solutions"
+                                          href="https://moz.com/enterprise-solutions"
+                                      >Enterprise Solutions</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="Small Business Solutions"
+                                          href="https://moz.com/smb-solutions"
+                                      >Small Business Solutions</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="The Moz Story"
+                                          href="https://moz.com/about"
+                                      >The Moz Story</a>
+                  </li>
+                              
+                                              
+                  <li class="">
+                    <a class="mzr-dropdown-item"
+                       title="New Releases"
+                                          href="https://moz.com/whats-new"
+                                      >New Releases</a>
+                  </li>
+                          </ul>
+            </div>
+          </div>
+          </li>
+          
+          <li class="mzr-nav-item  " aria-label="Attend MozCon">
+        <a
+                  href="https://moz.com/mozcon"
+                class=""
+          title="Attend MozCon"
+                  aria-label="Attend MozCon"
+                tabindex="-1"
+        >Attend MozCon</a>
+    
+          </li>
+          
+                <li class="mzr-nav-item  js-logged-out-only" aria-label="Log in">
+        <a
+                  href="/login"
+                class=""
+          title="Log in"
+                  aria-label="Log in"
+                tabindex="-1"
+        >Log in</a>
+    
+          </li>
+          
+                    <li class="mzr-nav-item  hidden js-logged-in-only" aria-label="Log out">
+        <a
+                  data-href="/logout"
+                class=""
+          title="Log out"
+                  aria-label="Log out"
+                tabindex="-1"
+        >Log out</a>
+    
+          </li>
+              </ul>
+            </div>
+            <ul class="mzr-navbar-nav mzr-nav-desktop">
+              
+    
+    
+            <li class="mzr-nav-item mzr-nav-item-desktop mzr-dropdown mzr-megamenu">
+                                  <a
+          tabindex="2"
+          class="mzr-dropdown-toggle"
+          href="/products"      data-menu-order="1"
+                  id="mzr-navbarDropdown-1025230"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Products"
+            data-nav-name="products"
+              >Products</a>
+                                
+                <div class="mzr-dropdown-menu mzr-drawer-links-list "
+                aria-label="Products submenu">
+                    
+    
+    <ul class="mega-columns js-nav-links">
+          
+                                                                                      
+        <li>
+          <a class="stretched-link" href="https://moz.com/products/pro" title="Try Moz Pro free" tabindex="-1"
+             data-logged-in-href="{&quot;slug&quot;:&quot;moz-pro&quot;,&quot;url&quot;:&quot;https:\/\/analytics.moz.com\/pro&quot;,&quot;title&quot;:&quot;Moz Pro Dashboard&quot;}"  
+            >
+            Moz Pro
+          </a>
+          <p>Your all-in-one suite of SEO essentials.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/products/local" title="Check my presence" tabindex="-1"
+             data-logged-in-href="{&quot;slug&quot;:&quot;moz-local&quot;,&quot;url&quot;:&quot;\/login\/localapp&quot;,&quot;title&quot;:&quot;Moz Local Dashboard&quot;}"  
+            >
+            Moz Local
+          </a>
+          <p>Raise your local SEO visibility with complete local SEO management.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="/products/stat" title="Book a demo" tabindex="-1"
+             
+            >
+            STAT
+          </a>
+          <p>SERP tracking and analytics for enterprise SEO experts.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/products/api" title="Get connected" tabindex="-1"
+             data-logged-in-href="{&quot;slug&quot;:&quot;moz-api&quot;,&quot;url&quot;:&quot;\/api\/dashboard\/usage&quot;,&quot;title&quot;:&quot;Moz API Dashboard&quot;}"  
+            >
+            Moz API
+          </a>
+          <p>Power your SEO with our index of over 44 trillion links.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/products" title="" tabindex="-1"
+             
+            >
+            Compare SEO Products
+          </a>
+          <p>See which Moz SEO solution best meets your business needs.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/moz-data" title="" tabindex="-1"
+             
+            >
+            Moz Data
+          </a>
+          <p>Power your SEO strategy &amp; AI models with custom data solutions.<br /></p>
+        </li>
+      </ul>
+    
+                <div class="mzr-ad-block mzr-links-list-ad-full">
+                                  <img src="https://moz.com/files/cms/nav/ads/AI-Research_nav-ad.svg?dm=1776183832" alt="Track your brand’s footprint in AI search">
+            <div class="mzr-ad-copy">
+                  <small class="my-1 text-white">Moz Pro</small>
+                        <h4 class="text-white">Track your brand’s footprint in AI search</h4>
+                                <a href="/blog/ai-research-workflow-moz-pro" title="Track your brand’s footprint in AI search" class="btn btn-yellow btn-sm btn-outline">
+              Learn more
+                      </a>
+              </div>
+      </div>
+          
+          </div>
+          </li>
+            <li class="mzr-nav-item mzr-nav-item-desktop mzr-dropdown mzr-megamenu">
+                                  <a
+          tabindex="3"
+          class="mzr-dropdown-toggle"
+          href="/free-seo-tools"      data-menu-order="2"
+                  id="mzr-navbarDropdown-1025233"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Free SEO Tools"
+            data-nav-name="free-seo-tools"
+              >Free SEO Tools</a>
+                                
+                <div class="mzr-dropdown-menu mzr-drawer-links-list "
+                aria-label="Free SEO Tools submenu">
+                    
+    
+    <ul class="mega-columns js-nav-links">
+          
+                              
+        <li>
+          <a class="stretched-link" href="/domain-analysis" title="" tabindex="-1"
+             
+            >
+            Domain Analysis
+          </a>
+          <p>Get top competitive SEO metrics like DA, top pages and more.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/explorer" title="" tabindex="-1"
+             
+            >
+            Keyword Explorer
+          </a>
+          <p>Find traffic-driving keywords with our 1.25 billion+ keyword index.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/link-explorer" title="" tabindex="-1"
+             
+            >
+            Link Explorer
+          </a>
+          <p>Explore over 40 trillion links for powerful backlink data.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="/competitive-research" title="" tabindex="-1"
+             
+            >
+            Competitive Research
+          </a>
+          <p>Uncover valuable insights on your organic search competitors.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/products/pro/seo-toolbar" title="" tabindex="-1"
+             
+            >
+            MozBar
+          </a>
+          <p>See top SEO metrics for free as you browse the web.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/free-seo-tools" title="" tabindex="-1"
+             
+            >
+            More Free SEO Tools
+          </a>
+          <p>Explore all the free SEO tools Moz has to offer.</p>
+        </li>
+      </ul>
+    
+                <div class="mzr-ad-block mzr-links-list-ad-full">
+                                  <img src="https://moz.com/images/cms/nav/ads/Moz-Local-Listings-AI-GTM_navigation-ad.png?w=290&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1748899973&amp;s=ded3c4a2975e7c6ea5f089992f4ec1cb" alt="Let your business shine with Listings AI">
+            <div class="mzr-ad-copy">
+                        <h4>Let your business shine with Listings AI</h4>
+                                <a href="/products/local/check-listing" title="Let your business shine with Listings AI" class="btn btn-yellow btn-sm btn-outline">
+              Get found
+                      </a>
+              </div>
+      </div>
+          
+          </div>
+          </li>
+            <li class="mzr-nav-item mzr-nav-item-desktop mzr-dropdown mzr-megamenu">
+                                  <a
+          tabindex="4"
+          class="mzr-dropdown-toggle"
+          href="/learn/seo"      data-menu-order="3"
+                  id="mzr-navbarDropdown-1025236"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Learn SEO"
+            data-nav-name="learn-seo"
+              >Learn SEO</a>
+                                
+                <div class="mzr-dropdown-menu mzr-drawer-links-list "
+                aria-label="Learn SEO submenu">
+                    
+    
+    <ul class="mega-columns js-nav-links">
+          
+                              
+        <li>
+          <a class="stretched-link" href="/beginners-guide-to-seo" title="Read the Beginner&#039;s Guide" tabindex="-1"
+             
+            >
+            Beginner&#039;s Guide to SEO
+          </a>
+          <p>The #1 most popular introduction to SEO, trusted by millions.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="/learn/seo" title="Visit the Learning Center" tabindex="-1"
+             
+            >
+            SEO Learning Center
+          </a>
+          <p>Broaden your knowledge with SEO resources for all skill levels.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="/learn/seo/resources?learnContentType=webinars" title="View All Webinars" tabindex="-1"
+             
+            >
+            On-Demand Webinars
+          </a>
+          <p> Learn modern SEO best practices from industry experts.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/learn/seo/guides" title="See All SEO Guides" tabindex="-1"
+             
+            >
+            How-To Guides
+          </a>
+          <p>Step-by-step guides to search success from the authority on SEO.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://academy.moz.com/" title="Explore the Catalog" tabindex="-1"
+             
+            >
+            Moz Academy
+          </a>
+          <p>Upskill and get certified with on-demand courses &amp; certifications.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/mozcon" title="Attend MozCon" tabindex="-1"
+             
+            >
+            MozCon
+          </a>
+          <p>Save on Early Bird tickets and join us in London or New York City</p>
+        </li>
+      </ul>
+    
+                <div class="mzr-ad-block mzr-links-list-ad-full">
+                                  <img src="https://moz.com/images/cms/nav/ads/DiscoverAPI-TopNav-290x330.png?w=290&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1717700420&amp;s=516819848250cbea4a2388999de66ec7" alt="Access 20 years of data with flexible pricing">
+            <div class="mzr-ad-copy">
+                  <small class="my-1 text-white">Moz API</small>
+                        <h4 class="text-white">Access 20 years of data with flexible pricing</h4>
+                                <a href="/products/api/pricing" title="Access 20 years of data with flexible pricing" class="btn btn-yellow btn-sm btn-outline">
+              Find your plan
+                      </a>
+              </div>
+      </div>
+          
+          </div>
+          </li>
+            <li class="mzr-nav-item mzr-nav-item-desktop ">
+                    <a
+          tabindex="5"
+          class=""
+          href="https://moz.com/blog"      data-menu-order="4"
+              >Blog</a>
+          </li>
+            <li class="mzr-nav-item mzr-nav-item-desktop mzr-dropdown mzr-megamenu">
+                                <a
+          tabindex="6"
+          class="mzr-dropdown-toggle"
+          href="/about"      data-menu-order="5"
+                  id="mzr-navbarDropdown-1025242"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Why Moz"
+            data-nav-name="why-moz"
+              >Why Moz</a>
+                                
+                <div class="mzr-dropdown-menu mzr-drawer-links-list "
+                aria-label="Why Moz submenu">
+                    
+    
+    <ul class="mega-columns js-nav-links">
+          
+                              
+        <li>
+          <a class="stretched-link" href="https://moz.com/digital-marketers" title="" tabindex="-1"
+             
+            >
+            Digital Marketers
+          </a>
+          <p>Simplify SEO tasks to save time and grow your traffic.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="/smb-solutions" title="Grow Your Business" tabindex="-1"
+             
+            >
+            Small Business Solutions
+          </a>
+          <p>Uncover insights to make smarter marketing decisions in less time.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="/agency-solutions" title="Drive Client Success" tabindex="-1"
+             
+            >
+            Agency Solutions
+          </a>
+          <p>Earn &amp; keep valuable clients with unparalleled data &amp; insights.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="/enterprise-solutions" title="Scale Your SEO" tabindex="-1"
+             
+            >
+            Enterprise Solutions
+          </a>
+          <p>Gain a competitive edge in the ever-changing world of search.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/about" title="Read Our Story" tabindex="-1"
+             
+            >
+            The Moz Story
+          </a>
+          <p>Moz was the first &amp; remains the most trusted SEO company.</p>
+        </li>
+                  
+        <li>
+          <a class="stretched-link" href="https://moz.com/whats-new" title="See What’s New" tabindex="-1"
+             
+            >
+            New Releases
+          </a>
+          <p>Get the scoop on the latest and greatest from Moz.</p>
+        </li>
+      </ul>
+    
+                <div class="mzr-ad-block mzr-links-list-ad-full">
+                                  <img src="https://moz.com/files/cms/nav/ads/CRSuite-moz-nav-outlined.svg?dm=1651020105" alt="Surface actionable competitive intel">
+            <div class="mzr-ad-copy">
+                  <small class="my-1">New Feature</small>
+                        <h4>Surface actionable competitive intel</h4>
+                                <a href="/try-competitive-research-suite" title="Surface actionable competitive intel" class="btn btn-yellow btn-sm btn-outline">
+              Learn More
+                      </a>
+              </div>
+      </div>
+          
+          </div>
+          </li>
+            <li class="mzr-nav-item mzr-nav-item-desktop ">
+                    <a
+          tabindex="7"
+          class=""
+          href="https://moz.com/mozcon"      data-menu-order="6"
+              >Attend MozCon</a>
+          </li>
+            </ul>
+            <ul class="mzr-nav-avatar js-nav-avatar">
+              
+    
+                 
+    
+                    
+      <li class="mzr-nav-item  mzr-search">
+                <a
+          tabindex="7"
+          title="Search"
+          href="https://moz.com/search"
+          class=""
+                data-menu-order="6" 
+              >  
+      
+    
+      <svg class="icon icon-search" >
+        <use href="#icon-search">
+      </svg>
+    </a>
+    
+          </li>
+                 
+    
+                
+      <li class="mzr-nav-item  mzr-login js-login">
+                <a
+          tabindex="8"
+          title="Log in"
+          href="/login"
+          class=""
+                data-menu-order="7" 
+              >Log in</a>
+    
+          </li>
+                 
+    
+                            
+      <li class="mzr-nav-item mzr-dropdown mzr-megamenu mzr-apps js-apps hidden">
+                <a
+          tabindex="9"
+          title="Apps"
+          href="#"
+          class=""
+                data-menu-order="8" 
+                  id="mzr-navbarDropdown-1026905"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-mzr-dropdown=".mzr-dropdown-menu"
+              >        
+    <svg aria-labelledby="icon-apps-grid" id="Grid_tools" data-name="Grid tools" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+      <rect id="Rectangle_1282" data-name="Rectangle 1282" width="5" height="5" fill="#fff"/>
+      <rect id="Rectangle_1291" data-name="Rectangle 1291" width="5" height="5" transform="translate(0 7)"/>
+      <rect id="Rectangle_1296" data-name="Rectangle 1296" width="5" height="5" transform="translate(0 7)"/>
+      <rect id="Rectangle_1301" data-name="Rectangle 1301" width="5" height="5" transform="translate(0 14)"/>
+      <rect id="Rectangle_1283" data-name="Rectangle 1283" width="5" height="5" transform="translate(7)"/>
+      <rect id="Rectangle_1289" data-name="Rectangle 1289" width="5" height="5" transform="translate(7 7)"/>
+      <rect id="Rectangle_1294" data-name="Rectangle 1294" width="5" height="5" transform="translate(7 7)"/>
+      <rect id="Rectangle_1299" data-name="Rectangle 1299" width="5" height="5" transform="translate(7 14)"/>
+      <rect id="Rectangle_1284" data-name="Rectangle 1284" width="5" height="5" transform="translate(7)"/>
+      <rect id="Rectangle_1290" data-name="Rectangle 1290" width="5" height="5" transform="translate(7 7)"/>
+      <rect id="Rectangle_1295" data-name="Rectangle 1295" width="5" height="5" transform="translate(7 7)"/>
+      <rect id="Rectangle_1300" data-name="Rectangle 1300" width="5" height="5" transform="translate(7 14)"/>
+      <rect id="Rectangle_1285" data-name="Rectangle 1285" width="5" height="5" transform="translate(14)"/>
+      <rect id="Rectangle_1288" data-name="Rectangle 1288" width="5" height="5" transform="translate(14 7)"/>
+      <rect id="Rectangle_1293" data-name="Rectangle 1293" width="5" height="5" transform="translate(14 7)"/>
+      <rect id="Rectangle_1298" data-name="Rectangle 1298" width="5" height="5" transform="translate(14 14)"/>
+    </svg>
+          </a>
+    
+              <div class="mzr-dropdown-menu" aria-labelledby="mzr-navbarDropdown-1026905">
+            <ul>
+                                                                          <li class="">
+                  <a
+                    tabindex="-1"
+                    title="Moz Pro"
+                    data-href="https://analytics.moz.com/pro"
+                    class="mzr-nav-item-logged-in"
+                  >Moz Pro</a>
+                </li>
+                                                                                                        <li class="js-local-lander">
+                  <a
+                    tabindex="-1"
+                    title="Moz Local"
+                    data-href="https://moz.com/products/local"
+                    class="mzr-nav-item-logged-in"
+                  >Moz Local</a>
+                </li>
+                                                                                                        <li class="hidden js-local-dashboard-only">
+                  <a
+                    tabindex="-1"
+                    title="Moz Local Dashboard"
+                    data-href="https://moz.com/login/localapp"
+                    class="mzr-nav-item-logged-in"
+                  >Moz Local Dashboard</a>
+                </li>
+                                                                                                        <li class="js-api-lander">
+                  <a
+                    tabindex="-1"
+                    title="Moz API"
+                    data-href="https://moz.com/products/api"
+                    class="mzr-nav-item-logged-in"
+                  >Moz API</a>
+                </li>
+                                                                                                      <li class="hidden js-api-dashboard-only">
+                  <a
+                    tabindex="-1"
+                    title="Moz API Dashboard"
+                    data-href="https://moz.com/api/dashboard/usage"
+                    class="mzr-nav-item-logged-in"
+                  >Moz API Dashboard</a>
+                </li>
+                                                                          <li class="">
+                  <a
+                    tabindex="-1"
+                    title="Moz Academy"
+                    data-href="https://academy.moz.com"
+                    class="mzr-nav-item-logged-in"
+                  >Moz Academy</a>
+                </li>
+                      </ul>
+          </div>
+          </li>
+                 
+    
+                
+      <li class="mzr-nav-item mzr-dropdown mzr-megamenu mzr-avatar js-avatar hidden">
+                <a
+          tabindex="10"
+          title="Avatar"
+          href="#"
+          class=""
+                data-menu-order="9" 
+                  id="mzr-navbarDropdown-1025272"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-mzr-dropdown=".mzr-dropdown-menu"
+              >Avatar</a>
+    
+              <div class="mzr-dropdown-menu" aria-labelledby="mzr-navbarDropdown-1025272">
+            <ul>
+                                                                          <li class="">
+                  <a
+                    tabindex="-1"
+                    title="Moz Home"
+                    data-href="http://moz.com/home"
+                    class="mzr-nav-item-logged-in"
+                  >Moz Home</a>
+                </li>
+                                                                                                        <li class="">
+                  <a
+                    tabindex="-1"
+                    title="Notifications"
+                    data-href="/notifications"
+                    class="js-notifications mzr-nav-item-logged-in"
+                  >Notifications</a>
+                </li>
+                                                                          <li class="">
+                  <a
+                    tabindex="-1"
+                    title="Account &amp; Billing"
+                    data-href="/subscriptions"
+                    class="mzr-nav-item-logged-in"
+                  >Account &amp; Billing</a>
+                </li>
+                                                                          <li class="">
+                  <a
+                    tabindex="-1"
+                    title="Manage Users"
+                    data-href="/account"
+                    class="mzr-nav-item-logged-in"
+                  >Manage Users</a>
+                </li>
+                                                                                                        <li class="js-community-profile">
+                  <a
+                    tabindex="-1"
+                    title="Community Profile"
+                    data-href="/community/q/user/"
+                    class="mzr-nav-item-logged-in"
+                  >Community Profile</a>
+                </li>
+                                                                          <li class="">
+                  <a
+                    tabindex="-1"
+                    title="My Q&amp;A"
+                    data-href="/community/q/my-questions"
+                    class="mzr-nav-item-logged-in"
+                  >My Q&amp;A</a>
+                </li>
+                                                                          <li class="">
+                  <a
+                    tabindex="-1"
+                    title="My Videos"
+                    data-href="/videos"
+                    class="mzr-nav-item-logged-in"
+                  >My Videos</a>
+                </li>
+                                                                          <li class="">
+                  <a
+                    tabindex="-1"
+                    title="Log Out"
+                    data-href="/logout"
+                    class="mzr-nav-item-logged-in"
+                  >Log Out</a>
+                </li>
+                      </ul>
+          </div>
+          </li>
+            </ul>
+          </nav>
+          <div class="mzr-mega-drawer"></div>
+        </div>
+      
+    
+    
+    
+    
+    
+      <script src="https://moz-static.moz.com/assets/dist/scripts/nav-a7ef64b8.min.js"></script>
+    <script src="https://moz-static.moz.com/assets/dist/scripts/nav-mgn-4829dae3.min.js"></script>
+    <script>(function() {
+        var container = document.querySelector('#mzr-top-nav');
+        var mozIcons = document.getElementById('moz-icons');
+        if (container === null || mozIcons !== null) {
+          return;
+        }
+        var icon = document.createElement('div');
+        icon.id = 'moz-icons';
+        icon.style = 'display:none;';
+        document.querySelector('#mzr-top-nav').appendChild(icon);
+    
+        var request = new XMLHttpRequest();
+        request.open('GET', 'https://moz.com/assets/dist/icons/icons-7d792b2f.min.svg', true);
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 400) {
+            var resp = request.responseText;
+    
+            document.getElementById('moz-icons').innerHTML = resp;
+          }
+        };
+        request.send();
+      })();</script>
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a403ab59dbd08eaa',t:'MTc5MDI3MjYyMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>        <main class="content">
+      <header class="jumbotron pb-4 background-ultra-light-gray text-black">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <img src=/svc/stargate/assets/images/mozcast/stormy.png style="width:200px; height: 180px" />
+            <div>
+              <div class="display-1 text-primary" style="font-size:120px">116°</div>
+              <h1>Weather for Thursday, Sep 24</h1>
+            </div>
+          </div>
+          <div id="metrics" class="row justify-content-center">
+            <div class="col-xl-9">
+              <p class="lead mt-2">MozCast is a weather report showing turbulence in the Google algorithm over the previous day (or see the 90-day history&nbsp;below). The&nbsp;hotter and stormier the weather, the more Google's rankings&nbsp;changed.</p>
+              <b-card no-body v-cloak>
+                <b-tabs pills fill small card lazy>
+                  <b-tab v-for="metric in metrics" :key="metric.title" :title="metric.title">
+                    <b-card-text>
+                      <p v-if="metric.description">${metric.description}</p>
+                      <highcharts :options="metric.options" />
+                    </b-card-text>
+                  </b-tab>
+                </b-tabs>
+              </b-card>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-xl-9">
+            <div id="features">
+              <h2 class="text-center">Google SERP Features</h2>
+              <p>There's a lot to a SERP beyond 10 blue links. The MozCast Feature Graph tracks changes in major SERP features over time. Check the box next to any feature (or combination) to see sample searches with those features.</p>
+              <b-table :fields="fields" :items="items" sort-by="prevalence" :sort-desc="true" v-cloak small>
+                <template #cell(prevalence)="data">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1 mr-1">
+                      <b-progress max="100">
+                        <b-progress-bar :value="data.value" />
+                      </b-progress>
+                    </div>
+                    <div style="width:4.5ch">
+                      ${data.value}%
+                    </div>
+                  </div>
+                </template>
+                <template #cell(history)="data">
+                  <highcharts :options="chartOptions(data.value)" />
+                </template>
+              </b-table>
+            </div>
+            <div class="my-4 card py-4 background-ultra-light-yellow">
+              <div class="card-body text-center">
+                <h1>Inclement weather impacting your SEO?</h1>
+                <p>Get the insights you need to win SERP features and improve your organic rankings with Moz Pro.</p>
+                <a href="/products/pro" class="btn btn-yellow">Learn More</a>
+              </div>
+            </div>
+            <div class="py-4 page-type-content">
+              <p>MozCast tracks the daily "weather" patterns of the Google algorithm. While major algorithm updates get a lot of press, Google made over 3,000 changes to search in 2018. What we notice and name is barely the tip of the iceberg. MozCast was designed to help you spot those unconfirmed changes in the Google algorithm.</p>
+              <h3>How Does MozCast work?</h3>
+              <p>Every 24 hours, we track a hand-picked set of 10,000 keywords (across 20 industry categories and 5 major US cities) and analyze page one of Google organic results, comparing it to the previous day. The MozCast temperature reflects the degree of change in the day-over-day rankings, with an uneventful day being about 70°F. Put simply, the hotter the temperature, the more change we saw in Google rankings in the previous 24 hours.</p>
+              <h3>How do I use MozCast?</h3>
+              <p>MozCast has been running since 2012 over a controlled data set, giving us a rich history to explore and challenging how we think about Google search results. Ultimately, it helps answer the question: "Did Google change, or was it just me?" Our SERP feature tracking can also help you quickly spot shifts in the ever-evolving landscape of rich search features, including Featured Snippets, Local Packs, Top Stories, and much more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="wrap-footer"></div>
+  </div>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a409f56529af54aa',t:'MTc5MDMzODU3MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+<div id="icons" style="display: none;"></div>
+<script>
+  _mtm.helpers.loadHTML('#icons', 'https://moz.com/mozbootstrap/4.6.11/images/icon-defs.svg')
+</script>
+
+    
+    <link type="text/css" href="https://moz.com/assets/dist/styles/components/footer-f5519c1f.min.css" rel="stylesheet">
+    <link type="text/css" href="https://moz.com/assets/dist/styles/components/snippets-grid-77f24533.min.css" rel="stylesheet">
+    
+    
+        
+      
+      
+            
+      <footer class="mzr-footer mzr-expanded-footer">
+        <div class="mzr-container">
+                <div class="mzr-subfooter-row mzr-row pt-0 pt-md-4 pb-4">
+            <div class="mzr-subfooter-cta mzr-col-12 mzr-col-lg">
+            
+              <h3>Get started with Moz Pro!</h3>
+              <div class="flex-grow-1 text-center text-lg-start">
+                <p>Unlock the power of advanced SEO tools and data-driven insights.</p>
+              </div>
+              
+    
+    
+    
+    <div class="flex-grow-1">
+      <a
+                href="/checkout/freetrial"
+        class="btn btn-primary btn-outline js-primary-cta"
+        target=""
+          >
+        Start my free trial
+          </a>
+    </div>
+    
+            </div>
+          </div>
+        </div>
+        <div class="mzr-container-fluid mzr-footer-links-lists">
+          <div class="mzr-container pt-7 pt-md-8">
+                    <div class="mzr-row">
+                        <div class="mzr-main-footer-column mzr-col-12 mzr-col-lg-9">
+                <div class="mzr-footer-links row mt-lg-2 pl-lg-5">
+                                                                    <div class="mzr-col-6 mzr-col-md 
+                        order-column-1
+                        
+                        ">
+                                                        
+                                                      
+                        <h5 class="h6 mzr-footer-nav-item-list-title">
+                          <a href="https://moz.com/products">Products  
+      
+    
+      <svg class="icon small icon-arrow-forward" >
+        <use href="#icon-arrow-forward">
+      </svg>
+    
+                          </a>
+                        </h5>
+                                                            <ul>
+                                                                                                <li>
+                              <a href="https://moz.com/products/pro" title="" tabindex="-1">
+                                Moz Pro
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/products/local" title="" tabindex="-1">
+                                Moz Local
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/products/api" title="" tabindex="-1">
+                                Moz API
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/moz-data" title="" tabindex="-1">
+                                Moz Data
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/products/stat" title="" tabindex="-1">
+                                STAT
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/whats-new" title="" tabindex="-1">
+                                Product Updates
+                              </a>
+                            </li>
+                                              </ul>
+                                                                                                                        
+                                          <h5 class="h6 mzr-footer-nav-item-list-title">Moz Solutions</h5>
+                                                            <ul>
+                                                                                                <li>
+                              <a href="https://moz.com/smb-solutions" title="" tabindex="-1">
+                                SMB Solutions
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/agency-solutions" title="" tabindex="-1">
+                                Agency Solutions
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/enterprise-solutions" title="" tabindex="-1">
+                                Enterprise Solutions
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/digital-marketers" title="" tabindex="-1">
+                                Digital Marketers
+                              </a>
+                            </li>
+                                              </ul>
+                                                        </div>
+                                                                                    <div class="mzr-col-6 mzr-col-md 
+                        
+                        
+                        ">
+                                                        
+                                                      
+                        <h5 class="h6 mzr-footer-nav-item-list-title">
+                          <a href="https://moz.com/free-seo-tools">Free SEO Tools  
+      
+    
+      <svg class="icon small icon-arrow-forward" >
+        <use href="#icon-arrow-forward">
+      </svg>
+    
+                          </a>
+                        </h5>
+                                                            <ul>
+                                                                                                <li>
+                              <a href="https://moz.com/domain-analysis" title="" tabindex="-1">
+                                Domain Authority Checker
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/link-explorer" title="" tabindex="-1">
+                                Link Explorer
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/explorer" title="" tabindex="-1">
+                                Keyword Explorer
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/competitive-research" title="" tabindex="-1">
+                                Competitive Research
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/brand-authority" title="" tabindex="-1">
+                                Brand Authority Checker
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/products/local/check-listing" title="" tabindex="-1">
+                                Local Citation Checker
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/products/pro/seo-toolbar" title="" tabindex="-1">
+                                MozBar Extension
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/mozcast" title="" tabindex="-1">
+                                MozCast
+                              </a>
+                            </li>
+                                              </ul>
+                                                        </div>
+                                                                                    <div class="mzr-col-6 mzr-col-md 
+                        
+                        
+                        ">
+                                                        
+                                          <h5 class="h6 mzr-footer-nav-item-list-title">Resources</h5>
+                                                            <ul>
+                                                                                                <li>
+                              <a href="https://moz.com/blog" title="" tabindex="-1">
+                                Blog
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/learn/seo" title="" tabindex="-1">
+                                SEO Learning Center
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/help" title="" tabindex="-1">
+                                Help Hub
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/beginners-guide-to-seo" title="" tabindex="-1">
+                                Beginner&#039;s Guide to SEO
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/learn/seo/guides" title="" tabindex="-1">
+                                How-to Guides
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://academy.moz.com/" title="" tabindex="-1">
+                                Moz Academy
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/api/docs" title="" tabindex="-1">
+                                API Docs
+                              </a>
+                            </li>
+                                              </ul>
+                                                        </div>
+                                                                                    <div class="mzr-col-6 mzr-col-md 
+                        
+                        order-column-5
+                        ">
+                                                        
+                                          <h5 class="h6 mzr-footer-nav-item-list-title">About Moz</h5>
+                                                            <ul>
+                                                                                                <li>
+                              <a href="https://moz.com/about" title="" tabindex="-1">
+                                About
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/about/team" title="" tabindex="-1">
+                                Team
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/about/jobs" title="" tabindex="-1">
+                                Careers
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/about/contact" title="" tabindex="-1">
+                                Contact
+                              </a>
+                            </li>
+                                              </ul>
+                                                                                                                        
+                                          <h5 class="h6 mzr-footer-nav-item-list-title">Why Moz</h5>
+                                                            <ul>
+                                                                                                <li>
+                              <a href="https://moz.com/learn/seo/resources?learnContentType=case-studies" title="" tabindex="-1">
+                                Case Studies
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/products/pro/testimonials" title="" tabindex="-1">
+                                Testimonials
+                              </a>
+                            </li>
+                                              </ul>
+                                                        </div>
+                                                                                    <div class="mzr-col-6 mzr-col-md 
+                        
+                        
+                        order-column-7">
+                                                        
+                                          <h5 class="h6 mzr-footer-nav-item-list-title">Get Involved</h5>
+                                                            <ul>
+                                                                                                <li>
+                              <a href="https://moz.com/moz-affiliate" title="" tabindex="-1">
+                                Become an Affiliate
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/mozcon" title="" tabindex="-1">
+                                MozCon
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/learn/seo/resources?learnContentType=webinars" title="" tabindex="-1">
+                                Webinars
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/webinars" title="" tabindex="-1">
+                                Practical Marketer Series
+                              </a>
+                            </li>
+                                                                          <li>
+                              <a href="https://moz.com/mozpod" title="" tabindex="-1">
+                                MozPod
+                              </a>
+                            </li>
+                                              </ul>
+                                                        </div>
+                                              </div>
+              </div>
+              <div class="mzr-main-footer-column mzr-col-12 mzr-col-lg-3 mzr-text-center mzr-text-lg-left">
+                <div class="mzr-social-links-footer pl-lg-5">
+                  <h5>Connect with us</h5>
+                                                                          
+                                
+    
+    
+    
+    <ul class="social-buttons social-buttons-horizontal social-buttons-small">
+          <li class="social-button social-button-twitter">
+          <a target="_blank" rel="noreferrer  noopener" title="link to Twitter" href="https://twitter.com/Moz">
+              
+      
+    
+      <svg class="icon small icon-twitter-x" >
+        <use href="#icon-twitter-x">
+      </svg>
+    
+          </a>
+        </li>
+            <li class="social-button social-button-facebook">
+          <a target="_blank" rel="noreferrer  noopener" title="link to Facebook" href="https://www.facebook.com/moz/">
+              
+      
+    
+      <svg class="icon small icon-facebook" >
+        <use href="#icon-facebook">
+      </svg>
+    
+          </a>
+        </li>
+            <li class="social-button social-button-instagram">
+          <a target="_blank" rel="noreferrer  noopener" title="link to Instagram" href="https://www.instagram.com/moz_hq/">
+              
+      
+    
+      <svg class="icon small icon-instagram" >
+        <use href="#icon-instagram">
+      </svg>
+    
+          </a>
+        </li>
+            <li class="social-button social-button-linkedin">
+          <a target="_blank" rel="noreferrer  noopener" title="link to Linkedin" href="https://www.linkedin.com/company/moz/">
+              
+      
+    
+      <svg class="icon small icon-linkedin" >
+        <use href="#icon-linkedin">
+      </svg>
+    
+          </a>
+        </li>
+            <li class="social-button social-button-youtube">
+          <a target="_blank" rel="noreferrer  noopener" title="link to youtube" href="https://www.youtube.com/channel/UCs26XZBwrSZLiTEH8wcoVXw">
+              
+      
+    
+      <svg class="icon small icon-youtube" >
+        <use href="#icon-youtube">
+      </svg>
+    
+          </a>
+        </li>
+      </ul>
+                  <p class="mt-4"><a class="link-cta" href="/help/contact">Contact the Help team</a></p>
+                </div>
+                          </div>
+            </div>
+          </div>
+        </div>
+        <div class="mzr-container-fluid mzr-footer-legal-row pt-5 pt-md-6 pb-4">
+          <div class="mzr-container">
+            <div class="mzr-row mzr-justify-space-between mzr-my-4">
+              <div class="mzr-col-12 mzr-col-lg-2 mzr-col-xxl-1">
+                <div class="mzr-footer-logo">
+                  <a href="https://moz.com/">
+                    
+    <svg aria-labelledby="moz-logo-title-footer" role="img" width="85" height="25">
+      <title id="moz-logo-title-footer">Moz logo</title>
+      <path d="M71 16L82.99 3h-25.1c-.48.018-.866.4-.89.882v2.736C54.697 2.696 49.97 0 44.5 0 38.036 0 32.61 3.76 31 8.863V3h-4.38c-1.043.015-1.957.478-2.62 1.177l-8.498 9.325L7 4.177C6.34 3.477 5.427 3.015 4.383 3H0v19h5.117c.492-.024.863-.42.883-.91V12l9.5 10.5L25 12v9.09c.017.49.415.886.905.91H31v-6.863C32.61 20.24 38.036 24 44.5 24c7.732 0 14-5.373 14-12 0-1.038-.17-2.04-.46-3H69L57 22h25.104c.48-.018.872-.403.896-.884V16H71zm-26.452 1.96c-3.764 0-6.818-2.668-6.818-5.96 0-3.293 3.053-5.96 6.818-5.96 3.768 0 6.822 2.668 6.822 5.96s-3.053 5.96-6.822 5.96z"></path>
+    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="mzr-col-12 mzr-col-lg mt-4 mt-lg-0">
+                <div class="mzr-copyright mzr-text-center">
+                  © 2021 - 2026 SEOMoz, Inc., a Ziff Davis company. All rights reserved. Moz is a registered trademark of SEOMoz, Inc.
+                </div>
+              </div>
+              <div class="mzr-col-12 mzr-col-lg-3 mzr-col-xxl-2 mt-4 mt-lg-0">
+                <div class="mzr-copyright mzr-text-center">
+                  <ul class="mzr-legal-links">
+                                                                            <li class="mzr-legal-nav-item">
+                          <a href="https://www.ziffdavis.com/accessibility">Accessibility</a>
+                        </li>
+                                                                                              <li class="mzr-legal-nav-item">
+                          <a href="https://moz.com/terms-of-use">Terms of Use</a>
+                        </li>
+                                                                                              <li class="mzr-legal-nav-item">
+                          <a href="https://moz.com/privacy-policy">Privacy</a>
+                        </li>
+                                                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+      <script>
+        mozModules.push(["hubspot-contact-form"]);
+      </script>
+    
+    
+    
+    
+      <script>(function() {
+        var container = document.querySelector('.mzr-footer');
+        var mozIcons = document.getElementById('moz-icons');
+        if (container === null || mozIcons !== null) {
+          return;
+        }
+        var icon = document.createElement('div');
+        icon.id = 'moz-icons';
+        icon.style = 'display:none;';
+        document.querySelector('.mzr-footer').appendChild(icon);
+    
+        var request = new XMLHttpRequest();
+        request.open('GET', 'https://moz.com/assets/dist/icons/icons-7d792b2f.min.svg', true);
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 400) {
+            var resp = request.responseText;
+    
+            document.getElementById('moz-icons').innerHTML = resp;
+          }
+        };
+        request.send();
+      })();</script>
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a403ab5ff80a74e8',t:'MTc5MDI3MjYyNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+
+
+</html>
+
+<script>
+  Vue.use(HighchartsVue)
+  new Vue({
+    el: '#metrics',
+    components: {
+      highcharts: HighchartsVue.Chart
+    },
+    data: {
+      weather: [{"big10":0.216867,"date":"2026-09-24T16:00:23.000Z","dateStr":"Sep 24","dayStr":"Thursday","domain_diversity":30.447499999999998,"emd_influence":2.67552,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.0313000000000003,"serps_count":8.2115,"temp":116},{"big10":0.223762,"date":"2026-09-23T16:00:23.000Z","dateStr":"Sep 23","dayStr":"Wednesday","domain_diversity":30.051699999999997,"emd_influence":2.66419,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.03242,"serps_count":8.1676,"temp":119},{"big10":0.226407,"date":"2026-09-22T16:00:23.000Z","dateStr":"Sep 22","dayStr":"Tuesday","domain_diversity":30.143700000000003,"emd_influence":2.62485,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":1.9866700000000002,"serps_count":8.1795,"temp":112},{"big10":0.225356,"date":"2026-09-21T16:00:23.000Z","dateStr":"Sep 21","dayStr":"Monday","domain_diversity":30.161900000000003,"emd_influence":2.69445,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.0504700000000002,"serps_count":8.1835,"temp":113},{"big10":0.227298,"date":"2026-09-20T16:00:22.000Z","dateStr":"Sep 20","dayStr":"Sunday","domain_diversity":30.1116,"emd_influence":2.6623,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.07434,"serps_count":8.1809,"temp":122},{"big10":0.229558,"date":"2026-09-19T16:00:23.000Z","dateStr":"Sep 19","dayStr":"Saturday","domain_diversity":30.2757,"emd_influence":2.6734299999999998,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.09034,"serps_count":8.1805,"temp":134},{"big10":0.229068,"date":"2026-09-18T16:00:22.000Z","dateStr":"Sep 18","dayStr":"Friday","domain_diversity":30.206100000000003,"emd_influence":2.6964200000000003,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.06909,"serps_count":8.1775,"temp":138},{"big10":0.235407,"date":"2026-09-17T16:00:22.000Z","dateStr":"Sep 17","dayStr":"Thursday","domain_diversity":30.269000000000002,"emd_influence":2.6243,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.02825,"serps_count":8.2041,"temp":134},{"big10":0.211534,"date":"2026-09-16T16:00:23.000Z","dateStr":"Sep 16","dayStr":"Wednesday","domain_diversity":30.355999999999998,"emd_influence":2.75543,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.14948,"serps_count":8.202,"temp":144},{"big10":0.212534,"date":"2026-09-15T16:00:24.000Z","dateStr":"Sep 15","dayStr":"Tuesday","domain_diversity":30.3249,"emd_influence":2.7314499999999997,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1551899999999997,"serps_count":8.2081,"temp":119},{"big10":0.220332,"date":"2026-09-14T22:26:08.000Z","dateStr":"Sep 14","dayStr":"Monday","domain_diversity":30.0981,"emd_influence":2.72097,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1318799999999998,"serps_count":8.0633,"temp":119},{"big10":0.203802,"date":"2026-09-13T16:00:04.000Z","dateStr":"Sep 13","dayStr":"Sunday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-12T16:00:04.000Z","dateStr":"Sep 12","dayStr":"Saturday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-09T16:00:02.000Z","dateStr":"Sep 9","dayStr":"Wednesday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-08T16:00:03.000Z","dateStr":"Sep 8","dayStr":"Tuesday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-07T16:00:03.000Z","dateStr":"Sep 7","dayStr":"Monday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-06T16:00:02.000Z","dateStr":"Sep 6","dayStr":"Sunday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-05T16:00:02.000Z","dateStr":"Sep 5","dayStr":"Saturday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-04T16:00:02.000Z","dateStr":"Sep 4","dayStr":"Friday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-03T16:00:02.000Z","dateStr":"Sep 3","dayStr":"Thursday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-02T16:00:02.000Z","dateStr":"Sep 2","dayStr":"Wednesday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-09-01T16:00:02.000Z","dateStr":"Sep 1","dayStr":"Tuesday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-08-31T16:00:02.000Z","dateStr":"Aug 31","dayStr":"Monday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-08-30T16:00:02.000Z","dateStr":"Aug 30","dayStr":"Sunday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-08-29T16:00:04.000Z","dateStr":"Aug 29","dayStr":"Saturday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-08-28T16:00:02.000Z","dateStr":"Aug 28","dayStr":"Friday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.203802,"date":"2026-08-27T16:00:02.000Z","dateStr":"Aug 27","dayStr":"Thursday","domain_diversity":30.9817,"emd_influence":2.81135,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.1913300000000002,"serps_count":7.86382,"temp":110},{"big10":0.187273,"date":"2026-08-26T16:00:24.000Z","dateStr":"Aug 26","dayStr":"Wednesday","domain_diversity":31.8653,"emd_influence":2.90172,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.2507900000000003,"serps_count":7.66435,"temp":101},{"big10":0.186744,"date":"2026-08-25T16:00:24.000Z","dateStr":"Aug 25","dayStr":"Tuesday","domain_diversity":32.1375,"emd_influence":2.8938200000000003,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.29544,"serps_count":7.66374,"temp":104},{"big10":0.186142,"date":"2026-08-24T16:00:25.000Z","dateStr":"Aug 24","dayStr":"Monday","domain_diversity":31.8221,"emd_influence":2.90595,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.174,"serps_count":7.70994,"temp":99},{"big10":0.187486,"date":"2026-08-23T16:00:22.000Z","dateStr":"Aug 23","dayStr":"Sunday","domain_diversity":31.825300000000002,"emd_influence":2.82705,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.18036,"serps_count":7.68432,"temp":101},{"big10":0.187084,"date":"2026-08-22T16:00:23.000Z","dateStr":"Aug 22","dayStr":"Saturday","domain_diversity":31.963599999999996,"emd_influence":2.86443,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.2372300000000003,"serps_count":7.67753,"temp":103},{"big10":0.186103,"date":"2026-08-21T16:00:23.000Z","dateStr":"Aug 21","dayStr":"Friday","domain_diversity":31.862099999999998,"emd_influence":2.83605,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.18832,"serps_count":7.69078,"temp":104},{"big10":0.186647,"date":"2026-08-20T16:00:23.000Z","dateStr":"Aug 20","dayStr":"Thursday","domain_diversity":31.9775,"emd_influence":2.84306,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.2870399999999997,"serps_count":7.70172,"temp":111},{"big10":0.187575,"date":"2026-08-19T16:00:24.000Z","dateStr":"Aug 19","dayStr":"Wednesday","domain_diversity":32.242599999999996,"emd_influence":2.74256,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.22945,"serps_count":7.70405,"temp":117},{"big10":0.187629,"date":"2026-08-18T16:00:27.000Z","dateStr":"Aug 18","dayStr":"Tuesday","domain_diversity":32.127,"emd_influence":2.79336,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.24063,"serps_count":7.73784,"temp":114},{"big10":0.186975,"date":"2026-08-17T16:00:25.000Z","dateStr":"Aug 17","dayStr":"Monday","domain_diversity":32.1641,"emd_influence":2.77427,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.2528200000000003,"serps_count":7.70868,"temp":93},{"big10":0.18621,"date":"2026-08-16T16:00:27.000Z","dateStr":"Aug 16","dayStr":"Sunday","domain_diversity":32.196200000000005,"emd_influence":2.80055,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.25619,"serps_count":7.72402,"temp":95},{"big10":0.186893,"date":"2026-08-15T16:00:24.000Z","dateStr":"Aug 15","dayStr":"Saturday","domain_diversity":32.1548,"emd_influence":2.7368900000000003,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3071,"serps_count":7.7265,"temp":99},{"big10":0.186943,"date":"2026-08-14T16:00:24.000Z","dateStr":"Aug 14","dayStr":"Friday","domain_diversity":32.1081,"emd_influence":2.7645,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.22545,"serps_count":7.7086,"temp":104},{"big10":0.188436,"date":"2026-08-13T16:00:25.000Z","dateStr":"Aug 13","dayStr":"Thursday","domain_diversity":31.6655,"emd_influence":2.81777,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.2419100000000003,"serps_count":7.73674,"temp":111},{"big10":0.190927,"date":"2026-08-12T16:00:26.000Z","dateStr":"Aug 12","dayStr":"Wednesday","domain_diversity":31.5807,"emd_influence":2.7927899999999997,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.20682,"serps_count":7.77376,"temp":130},{"big10":0.192699,"date":"2026-08-11T16:00:24.000Z","dateStr":"Aug 11","dayStr":"Tuesday","domain_diversity":31.9775,"emd_influence":2.85159,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3468,"serps_count":7.56484,"temp":115},{"big10":0.19099,"date":"2026-08-10T16:00:24.000Z","dateStr":"Aug 10","dayStr":"Monday","domain_diversity":32.1749,"emd_influence":2.86093,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.35669,"serps_count":7.536,"temp":110},{"big10":0.191753,"date":"2026-08-09T16:00:24.000Z","dateStr":"Aug 9","dayStr":"Sunday","domain_diversity":32.143699999999995,"emd_influence":2.83028,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3369,"serps_count":7.5399,"temp":112},{"big10":0.190248,"date":"2026-08-08T16:00:25.000Z","dateStr":"Aug 8","dayStr":"Saturday","domain_diversity":32.177,"emd_influence":2.83026,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3346999999999998,"serps_count":7.547,"temp":116},{"big10":0.191303,"date":"2026-08-07T16:00:24.000Z","dateStr":"Aug 7","dayStr":"Friday","domain_diversity":32.063199999999995,"emd_influence":2.8548299999999998,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.32734,"serps_count":7.5451,"temp":108},{"big10":0.190599,"date":"2026-08-06T16:00:24.000Z","dateStr":"Aug 6","dayStr":"Thursday","domain_diversity":32.0174,"emd_influence":2.88991,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.32308,"serps_count":7.5331,"temp":108},{"big10":0.190255,"date":"2026-08-05T16:00:25.000Z","dateStr":"Aug 5","dayStr":"Wednesday","domain_diversity":32.1331,"emd_influence":2.86786,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.34909,"serps_count":7.5178,"temp":110},{"big10":0.189137,"date":"2026-08-04T16:00:25.000Z","dateStr":"Aug 4","dayStr":"Tuesday","domain_diversity":32.1301,"emd_influence":2.87782,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.32669,"serps_count":7.53,"temp":114},{"big10":0.189583,"date":"2026-08-03T16:00:24.000Z","dateStr":"Aug 3","dayStr":"Monday","domain_diversity":32.2147,"emd_influence":2.83174,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.35005,"serps_count":7.536,"temp":107},{"big10":0.189987,"date":"2026-08-02T16:00:25.000Z","dateStr":"Aug 2","dayStr":"Sunday","domain_diversity":32.1731,"emd_influence":2.86445,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.34485,"serps_count":7.5442,"temp":108},{"big10":0.190467,"date":"2026-08-01T16:00:25.000Z","dateStr":"Aug 1","dayStr":"Saturday","domain_diversity":32.1535,"emd_influence":2.82213,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.32614,"serps_count":7.5404,"temp":109},{"big10":0.191306,"date":"2026-07-31T16:00:25.000Z","dateStr":"Jul 31","dayStr":"Friday","domain_diversity":32.135000000000005,"emd_influence":2.89459,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3560000000000003,"serps_count":7.5382,"temp":118},{"big10":0.19096,"date":"2026-07-30T16:00:25.000Z","dateStr":"Jul 30","dayStr":"Thursday","domain_diversity":32.1691,"emd_influence":2.83915,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.36596,"serps_count":7.5445,"temp":115},{"big10":0.190079,"date":"2026-07-29T16:00:25.000Z","dateStr":"Jul 29","dayStr":"Wednesday","domain_diversity":32.1657,"emd_influence":2.8841200000000002,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.35781,"serps_count":7.5621,"temp":114},{"big10":0.190551,"date":"2026-07-28T16:00:24.000Z","dateStr":"Jul 28","dayStr":"Tuesday","domain_diversity":32.1,"emd_influence":2.8766599999999998,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3233,"serps_count":7.5539,"temp":132},{"big10":0.186064,"date":"2026-07-27T16:00:26.000Z","dateStr":"Jul 27","dayStr":"Monday","domain_diversity":31.343799999999998,"emd_influence":2.85336,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.29552,"serps_count":7.6366,"temp":136},{"big10":0.183018,"date":"2026-07-26T16:00:25.000Z","dateStr":"Jul 26","dayStr":"Sunday","domain_diversity":31.426,"emd_influence":2.8977,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.34544,"serps_count":7.62406,"temp":138},{"big10":0.184521,"date":"2026-07-25T16:00:25.000Z","dateStr":"Jul 25","dayStr":"Saturday","domain_diversity":31.4376,"emd_influence":2.86584,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.33046,"serps_count":7.6208,"temp":138},{"big10":0.184434,"date":"2026-07-24T16:00:25.000Z","dateStr":"Jul 24","dayStr":"Friday","domain_diversity":31.346400000000003,"emd_influence":2.85729,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.28872,"serps_count":7.6331,"temp":142},{"big10":0.184021,"date":"2026-07-23T16:00:24.000Z","dateStr":"Jul 23","dayStr":"Thursday","domain_diversity":31.5533,"emd_influence":2.89089,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.30485,"serps_count":7.6274,"temp":142},{"big10":0.181771,"date":"2026-07-22T16:00:25.000Z","dateStr":"Jul 22","dayStr":"Wednesday","domain_diversity":31.492199999999997,"emd_influence":2.91032,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.33533,"serps_count":7.6349,"temp":146},{"big10":0.183724,"date":"2026-07-21T16:00:24.000Z","dateStr":"Jul 21","dayStr":"Tuesday","domain_diversity":31.5336,"emd_influence":2.87303,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.28554,"serps_count":7.6087,"temp":144},{"big10":0.183948,"date":"2026-07-20T16:00:25.000Z","dateStr":"Jul 20","dayStr":"Monday","domain_diversity":31.502999999999997,"emd_influence":2.85246,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.28328,"serps_count":7.625,"temp":143},{"big10":0.183649,"date":"2026-07-19T16:00:25.000Z","dateStr":"Jul 19","dayStr":"Sunday","domain_diversity":31.593799999999998,"emd_influence":2.85479,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3218099999999997,"serps_count":7.6363,"temp":147},{"big10":0.184543,"date":"2026-07-18T16:00:24.000Z","dateStr":"Jul 18","dayStr":"Saturday","domain_diversity":31.34,"emd_influence":2.8340899999999998,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.31547,"serps_count":7.6356,"temp":140},{"big10":0.189395,"date":"2026-07-17T16:00:25.000Z","dateStr":"Jul 17","dayStr":"Friday","domain_diversity":31.9796,"emd_influence":2.85574,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.36744,"serps_count":7.5567,"temp":124},{"big10":0.18923,"date":"2026-07-16T16:00:25.000Z","dateStr":"Jul 16","dayStr":"Thursday","domain_diversity":31.9294,"emd_influence":2.8307100000000003,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.34175,"serps_count":7.56776,"temp":124},{"big10":0.18882,"date":"2026-07-15T16:00:25.000Z","dateStr":"Jul 15","dayStr":"Wednesday","domain_diversity":32.113,"emd_influence":2.85393,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.38026,"serps_count":7.558,"temp":123},{"big10":0.19015,"date":"2026-07-14T16:00:25.000Z","dateStr":"Jul 14","dayStr":"Tuesday","domain_diversity":31.9451,"emd_influence":2.8619,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3619999999999997,"serps_count":7.5614,"temp":123},{"big10":0.191167,"date":"2026-07-13T16:00:24.000Z","dateStr":"Jul 13","dayStr":"Monday","domain_diversity":32.1238,"emd_influence":2.85956,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.38694,"serps_count":7.5536,"temp":111},{"big10":0.191362,"date":"2026-07-12T16:00:25.000Z","dateStr":"Jul 12","dayStr":"Sunday","domain_diversity":32.1293,"emd_influence":2.89974,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3386299999999998,"serps_count":7.5386,"temp":113},{"big10":0.191607,"date":"2026-07-11T16:00:25.000Z","dateStr":"Jul 11","dayStr":"Saturday","domain_diversity":32.0437,"emd_influence":2.84903,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.36226,"serps_count":7.5394,"temp":119},{"big10":0.190579,"date":"2026-07-10T16:00:25.000Z","dateStr":"Jul 10","dayStr":"Friday","domain_diversity":32.1375,"emd_influence":2.86899,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.33535,"serps_count":7.5706,"temp":117},{"big10":0.190564,"date":"2026-07-09T16:00:25.000Z","dateStr":"Jul 9","dayStr":"Thursday","domain_diversity":32.1917,"emd_influence":2.86051,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.33849,"serps_count":7.56045,"temp":112},{"big10":0.190119,"date":"2026-07-08T16:00:26.000Z","dateStr":"Jul 8","dayStr":"Wednesday","domain_diversity":32.1675,"emd_influence":2.89111,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.34439,"serps_count":7.55949,"temp":118},{"big10":0.190665,"date":"2026-07-07T16:00:24.000Z","dateStr":"Jul 7","dayStr":"Tuesday","domain_diversity":32.2907,"emd_influence":2.88674,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.37934,"serps_count":7.55888,"temp":117},{"big10":0.191894,"date":"2026-07-06T16:00:24.000Z","dateStr":"Jul 6","dayStr":"Monday","domain_diversity":32.1932,"emd_influence":2.8765,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.35915,"serps_count":7.56385,"temp":112},{"big10":0.191303,"date":"2026-07-05T16:00:25.000Z","dateStr":"Jul 5","dayStr":"Sunday","domain_diversity":32.087700000000005,"emd_influence":2.84714,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.35648,"serps_count":7.5545,"temp":116},{"big10":0.192307,"date":"2026-07-04T16:00:27.000Z","dateStr":"Jul 4","dayStr":"Saturday","domain_diversity":32.1881,"emd_influence":2.8482,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.37085,"serps_count":7.55217,"temp":120},{"big10":0.192477,"date":"2026-07-03T16:00:27.000Z","dateStr":"Jul 3","dayStr":"Friday","domain_diversity":32.0648,"emd_influence":2.88098,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.34378,"serps_count":7.54816,"temp":116},{"big10":0.191901,"date":"2026-07-02T16:00:25.000Z","dateStr":"Jul 2","dayStr":"Thursday","domain_diversity":32.1287,"emd_influence":2.86937,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.32755,"serps_count":7.55701,"temp":119},{"big10":0.192483,"date":"2026-07-01T16:00:24.000Z","dateStr":"Jul 1","dayStr":"Wednesday","domain_diversity":32.1535,"emd_influence":2.8407,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.38184,"serps_count":7.54946,"temp":124},{"big10":0.19159,"date":"2026-06-30T16:00:25.000Z","dateStr":"Jun 30","dayStr":"Tuesday","domain_diversity":32.1509,"emd_influence":2.86327,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.3631200000000003,"serps_count":7.56612,"temp":122},{"big10":0.192536,"date":"2026-06-29T16:00:25.000Z","dateStr":"Jun 29","dayStr":"Monday","domain_diversity":32.3057,"emd_influence":2.84439,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.39262,"serps_count":7.56181,"temp":115},{"big10":0.192193,"date":"2026-06-28T16:00:26.000Z","dateStr":"Jun 28","dayStr":"Sunday","domain_diversity":32.3345,"emd_influence":2.8574100000000002,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.4257500000000003,"serps_count":7.55759,"temp":121},{"big10":0.192392,"date":"2026-06-27T16:00:24.000Z","dateStr":"Jun 27","dayStr":"Saturday","domain_diversity":32.423,"emd_influence":2.91118,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.48603,"serps_count":7.56306,"temp":124},{"big10":0.192662,"date":"2026-06-26T16:00:26.000Z","dateStr":"Jun 26","dayStr":"Friday","domain_diversity":32.318200000000004,"emd_influence":2.89027,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.4552,"serps_count":7.55043,"temp":129},{"big10":0.19206,"date":"2026-06-25T16:00:25.000Z","dateStr":"Jun 25","dayStr":"Thursday","domain_diversity":32.3311,"emd_influence":2.89402,"icon":"/svc/stargate/assets/images/mozcast/stormy.png","pmd_influence":2.4130100000000003,"serps_count":7.55642,"temp":129}],
+    },
+    computed: {
+      metrics() {
+         let metrics = [
+          {
+            id: "algo-temperature",
+            title: "Algo Temperature",
+            axis: "Degrees",
+            unit: "°",
+            description: `Weather for the past ${this.weather.length} days`,
+            data: this.weather.map((e) => [e.dateStr, e.temp]),
+          },
+          {
+            id: "domain-diversity",
+            title: "Domain Diversity",
+            axis: "% Unique Sub-domains",
+            unit: "%",
+            description:
+              'Domain Diversity measures the percentage of unique sub-domains across the URLs in the data set. The less diversity there is, the more domain "crowding" we observed.',
+            data: this.weather.map((e) => [e.dateStr, e.domain_diversity]),
+          },
+          {
+            id: "serps-count",
+            description:
+              'SERP Count tracks the recent trend of SERP "shrinkage" - Google results with less than 10 organic listings on the first page. In most cases, these are 7-result SERPs.',
+            title: "Average Result Count",
+            axis: "Page 1",
+            unit: "",
+            data: this.weather.map((e) => [e.dateStr, e.serps_count]),
+          },
+          {
+            id: "emd-influence",
+            description:
+              'EMD Influence measures the percentage of top 10 results held by exact-match domains. This only counts domains of the form "keyword.tld" (e.g. buywidgets.com, buywidgets.net).',
+            title: "EMD Influence",
+            axis: "% Top 10 Rankings",
+            unit: "%",
+            data: this.weather.map((e) => [e.dateStr, e.emd_influence]),
+          },
+          {
+            id: "pmd-influence",
+            description:
+              'PMD Influence measures the percentage of top 10 results held by partial-match domains, excluding EMDs. These include any sub-domains that contain "keyword" or "key-word" (e.g. buy-widgets.com, webuywidgets.net, etc.).',
+            title: "PMD Influence",
+            axis: "% Top 10 Rankings",
+            unit: "%",
+            data: this.weather.map((e) => [e.dateStr, e.pmd_influence]),
+          },
+          {
+            id: "daily-big-10",
+            description:
+              "Big 10 Influence tracks the percentage of page one results held by the top 10 sub-domains. The top-10 domain list is dynamic and re-calculated daily.",
+            title: "Big 10 Influence",
+            axis: "% Top 10 Rankings",
+            unit: "%",
+            data: this.weather.map((e) => [e.dateStr, e.big10]),
+          },
+        ]
+        return metrics.map(tab => Object.assign(tab, {
+          options: {
+            chart: {
+              height: 200,
+            },
+            title: false,
+            xAxis: {
+              reversed: true,
+              type: 'category'
+            },
+            yAxis: {
+              title: {
+                text: tab.axis
+              }
+            },
+            legend: {
+              enabled: false
+            },
+            credits: {
+              enabled: false
+            },
+            plotOptions: {
+              series: {
+                pointIntervalUnit: 'day'
+              }
+            },
+            tooltip: {
+              outside: true,
+              formatter: function() {
+                return tab.data[this.point.index][0] + ': ' + (Math.round(this.y*100)/100) + tab.unit;
+              }
+            },
+            colors: ['#4dbdeb'],
+            series: [{
+              name: tab.title,
+              data: tab.data
+            }]
+          }
+        }))
+      },
+    },
+  });
+</script>
+<script>
+  new Vue({
+    el: '#features',
+    components: {
+      highcharts: HighchartsVue.Chart
+    },
+    data: {
+      features: [{"id":25,"title":"Local Packs","name":"lcl_new","feature_category_id":2,"average":0,"data":[{"date":"2026-09-24T16:00:01.000Z","value":0.2466},{"date":"2026-09-23T16:00:01.000Z","value":0.254},{"date":"2026-09-22T16:00:01.000Z","value":0.2428},{"date":"2026-09-21T16:00:01.000Z","value":0.2402},{"date":"2026-09-20T16:00:01.000Z","value":0.24},{"date":"2026-09-19T16:00:01.000Z","value":0.2434},{"date":"2026-09-18T16:00:01.000Z","value":0.2378},{"date":"2026-09-17T16:00:01.000Z","value":0.2442},{"date":"2026-09-16T16:00:01.000Z","value":0.2422},{"date":"2026-09-15T16:00:02.000Z","value":0.2404},{"date":"2026-09-14T22:25:38.000Z","value":0.245},{"date":"2026-09-13T16:00:01.000Z","value":0.181323},{"date":"2026-09-12T16:00:01.000Z","value":0.181323},{"date":"2026-09-09T16:00:01.000Z","value":0.181323},{"date":"2026-09-08T16:00:02.000Z","value":0.181323},{"date":"2026-09-07T16:00:01.000Z","value":0.181323},{"date":"2026-09-06T16:00:01.000Z","value":0.181323},{"date":"2026-09-05T16:00:00.000Z","value":0.181323},{"date":"2026-09-04T16:00:01.000Z","value":0.181323},{"date":"2026-09-03T16:00:01.000Z","value":0.181323},{"date":"2026-09-02T16:00:01.000Z","value":0.181323},{"date":"2026-09-01T16:00:01.000Z","value":0.181323},{"date":"2026-08-31T16:00:01.000Z","value":0.181323},{"date":"2026-08-30T16:00:01.000Z","value":0.181323},{"date":"2026-08-29T16:00:02.000Z","value":0.181323},{"date":"2026-08-28T16:00:00.000Z","value":0.181323},{"date":"2026-08-27T16:00:00.000Z","value":0.181323},{"date":"2026-08-26T16:00:01.000Z","value":0.117647},{"date":"2026-08-25T16:00:01.000Z","value":0.117897},{"date":"2026-08-24T16:00:02.000Z","value":0.112116},{"date":"2026-08-23T16:00:00.000Z","value":0.114346},{"date":"2026-08-22T16:00:01.000Z","value":0.112193},{"date":"2026-08-21T16:00:01.000Z","value":0.115466},{"date":"2026-08-20T16:00:01.000Z","value":0.11355},{"date":"2026-08-19T16:00:01.000Z","value":0.113236},{"date":"2026-08-18T16:00:01.000Z","value":0.10727},{"date":"2026-08-17T16:00:01.000Z","value":0.105616},{"date":"2026-08-16T16:00:01.000Z","value":0.109784},{"date":"2026-08-15T16:00:01.000Z","value":0.114154},{"date":"2026-08-14T16:00:01.000Z","value":0.112809},{"date":"2026-08-13T16:00:01.000Z","value":0.107758},{"date":"2026-08-12T16:00:01.000Z","value":0.105968},{"date":"2026-08-11T16:00:01.000Z","value":0.0953629},{"date":"2026-08-10T16:00:01.000Z","value":0.096},{"date":"2026-08-09T16:00:01.000Z","value":0.0974},{"date":"2026-08-08T16:00:01.000Z","value":0.1038},{"date":"2026-08-07T16:00:00.000Z","value":0.1076},{"date":"2026-08-06T16:00:01.000Z","value":0.1106},{"date":"2026-08-05T16:00:01.000Z","value":0.1096},{"date":"2026-08-04T16:00:01.000Z","value":0.1024},{"date":"2026-08-03T16:00:01.000Z","value":0.0966},{"date":"2026-08-02T16:00:01.000Z","value":0.1022},{"date":"2026-08-01T16:00:01.000Z","value":0.1016},{"date":"2026-07-31T16:00:01.000Z","value":0.1004},{"date":"2026-07-30T16:00:02.000Z","value":0.0968},{"date":"2026-07-29T16:00:01.000Z","value":0.0994},{"date":"2026-07-28T16:00:01.000Z","value":0.1022},{"date":"2026-07-27T16:00:02.000Z","value":0.0962},{"date":"2026-07-26T16:00:01.000Z","value":0.09982},{"date":"2026-07-25T16:00:01.000Z","value":0.1004},{"date":"2026-07-24T16:00:01.000Z","value":0.1002},{"date":"2026-07-23T16:00:01.000Z","value":0.1016},{"date":"2026-07-22T16:00:02.000Z","value":0.0986},{"date":"2026-07-21T16:00:01.000Z","value":0.1008},{"date":"2026-07-20T16:00:01.000Z","value":0.095},{"date":"2026-07-19T16:00:01.000Z","value":0.098},{"date":"2026-07-18T16:00:01.000Z","value":0.102},{"date":"2026-07-17T16:00:01.000Z","value":0.0988},{"date":"2026-07-16T16:00:01.000Z","value":0.1004},{"date":"2026-07-15T16:00:01.000Z","value":0.103},{"date":"2026-07-14T16:00:01.000Z","value":0.1012},{"date":"2026-07-13T16:00:01.000Z","value":0.1014},{"date":"2026-07-12T16:00:01.000Z","value":0.102},{"date":"2026-07-11T16:00:01.000Z","value":0.1026},{"date":"2026-07-10T16:00:01.000Z","value":0.1016},{"date":"2026-07-09T16:00:01.000Z","value":0.102924},{"date":"2026-07-08T16:00:01.000Z","value":0.0984985},{"date":"2026-07-07T16:00:00.000Z","value":0.100982},{"date":"2026-07-06T16:00:01.000Z","value":0.1003},{"date":"2026-07-05T16:00:01.000Z","value":0.105632},{"date":"2026-07-04T16:00:01.000Z","value":0.105569},{"date":"2026-07-03T16:00:02.000Z","value":0.102785},{"date":"2026-07-02T16:00:01.000Z","value":0.101061},{"date":"2026-07-01T16:00:01.000Z","value":0.0983574},{"date":"2026-06-30T16:00:01.000Z","value":0.0995394},{"date":"2026-06-29T16:00:01.000Z","value":0.0911458},{"date":"2026-06-28T16:00:01.000Z","value":0.0926371},{"date":"2026-06-27T16:00:00.000Z","value":0.0915832},{"date":"2026-06-26T16:00:01.000Z","value":0.0965351},{"date":"2026-06-25T16:00:01.000Z","value":0.093312}]},{"id":27,"title":"Featured Snippets","name":"answer2","feature_category_id":3,"average":0,"data":[{"date":"2026-09-24T16:00:01.000Z","value":0},{"date":"2026-09-23T16:00:01.000Z","value":0},{"date":"2026-09-22T16:00:01.000Z","value":0},{"date":"2026-09-21T16:00:01.000Z","value":0},{"date":"2026-09-20T16:00:01.000Z","value":0},{"date":"2026-09-19T16:00:01.000Z","value":0},{"date":"2026-09-18T16:00:01.000Z","value":0},{"date":"2026-09-17T16:00:01.000Z","value":0},{"date":"2026-09-16T16:00:01.000Z","value":0},{"date":"2026-09-15T16:00:02.000Z","value":0},{"date":"2026-09-14T22:25:38.000Z","value":0},{"date":"2026-09-13T16:00:01.000Z","value":0},{"date":"2026-09-12T16:00:01.000Z","value":0},{"date":"2026-09-09T16:00:01.000Z","value":0},{"date":"2026-09-08T16:00:02.000Z","value":0},{"date":"2026-09-07T16:00:01.000Z","value":0},{"date":"2026-09-06T16:00:01.000Z","value":0},{"date":"2026-09-05T16:00:00.000Z","value":0},{"date":"2026-09-04T16:00:01.000Z","value":0},{"date":"2026-09-03T16:00:01.000Z","value":0},{"date":"2026-09-02T16:00:01.000Z","value":0},{"date":"2026-09-01T16:00:01.000Z","value":0},{"date":"2026-08-31T16:00:01.000Z","value":0.00168919},{"date":"2026-08-30T16:00:01.000Z","value":0},{"date":"2026-08-29T16:00:02.000Z","value":0.00179211},{"date":"2026-08-28T16:00:00.000Z","value":0.000915751},{"date":"2026-08-27T16:00:00.000Z","value":0.00115473},{"date":"2026-08-26T16:00:01.000Z","value":0.00052626},{"date":"2026-08-25T16:00:01.000Z","value":0.000953188},{"date":"2026-08-24T16:00:02.000Z","value":0.00189514},{"date":"2026-08-23T16:00:00.000Z","value":0.00189913},{"date":"2026-08-22T16:00:01.000Z","value":0.000529157},{"date":"2026-08-21T16:00:01.000Z","value":0.000947867},{"date":"2026-08-20T16:00:01.000Z","value":0.00116022},{"date":"2026-08-19T16:00:01.000Z","value":0.000845577},{"date":"2026-08-18T16:00:01.000Z","value":0.00125484},{"date":"2026-08-17T16:00:01.000Z","value":0.00104679},{"date":"2026-08-16T16:00:01.000Z","value":0.0011534},{"date":"2026-08-15T16:00:01.000Z","value":0.00250627},{"date":"2026-08-14T16:00:01.000Z","value":0.00167469},{"date":"2026-08-13T16:00:01.000Z","value":0.00202511},{"date":"2026-08-12T16:00:01.000Z","value":0.00233337},{"date":"2026-08-11T16:00:01.000Z","value":0.00161209},{"date":"2026-08-10T16:00:01.000Z","value":0.002},{"date":"2026-08-09T16:00:01.000Z","value":0.0023},{"date":"2026-08-08T16:00:01.000Z","value":0.002},{"date":"2026-08-07T16:00:00.000Z","value":0.0022},{"date":"2026-08-06T16:00:01.000Z","value":0.0017},{"date":"2026-08-05T16:00:01.000Z","value":0.0019},{"date":"2026-08-04T16:00:01.000Z","value":0.002},{"date":"2026-08-03T16:00:01.000Z","value":0.0017},{"date":"2026-08-02T16:00:01.000Z","value":0.0018},{"date":"2026-08-01T16:00:01.000Z","value":0.0014},{"date":"2026-07-31T16:00:01.000Z","value":0.0013},{"date":"2026-07-30T16:00:02.000Z","value":0.0031},{"date":"2026-07-29T16:00:01.000Z","value":0.0025},{"date":"2026-07-28T16:00:01.000Z","value":0.0021},{"date":"2026-07-27T16:00:02.000Z","value":0.0022},{"date":"2026-07-26T16:00:01.000Z","value":0.00160016},{"date":"2026-07-25T16:00:01.000Z","value":0.0027},{"date":"2026-07-24T16:00:01.000Z","value":0.0017},{"date":"2026-07-23T16:00:01.000Z","value":0.0023},{"date":"2026-07-22T16:00:02.000Z","value":0.0037},{"date":"2026-07-21T16:00:01.000Z","value":0.0043},{"date":"2026-07-20T16:00:01.000Z","value":0.005},{"date":"2026-07-19T16:00:01.000Z","value":0.0035},{"date":"2026-07-18T16:00:01.000Z","value":0.0046},{"date":"2026-07-17T16:00:01.000Z","value":0.0038},{"date":"2026-07-16T16:00:01.000Z","value":0.00370037},{"date":"2026-07-15T16:00:01.000Z","value":0.0033},{"date":"2026-07-14T16:00:01.000Z","value":0.0037},{"date":"2026-07-13T16:00:01.000Z","value":0.0035},{"date":"2026-07-12T16:00:01.000Z","value":0.0028},{"date":"2026-07-11T16:00:01.000Z","value":0.0041},{"date":"2026-07-10T16:00:01.000Z","value":0.0032},{"date":"2026-07-09T16:00:01.000Z","value":0.00300511},{"date":"2026-07-08T16:00:01.000Z","value":0.00320224},{"date":"2026-07-07T16:00:00.000Z","value":0.00280393},{"date":"2026-07-06T16:00:01.000Z","value":0.0030024},{"date":"2026-07-05T16:00:01.000Z","value":0.00300541},{"date":"2026-07-04T16:00:01.000Z","value":0.00400561},{"date":"2026-07-03T16:00:02.000Z","value":0.0030036},{"date":"2026-07-02T16:00:01.000Z","value":0.00270297},{"date":"2026-07-01T16:00:01.000Z","value":0.00310372},{"date":"2026-06-30T16:00:01.000Z","value":0.00260286},{"date":"2026-06-29T16:00:01.000Z","value":0.00420757},{"date":"2026-06-28T16:00:01.000Z","value":0.00340238},{"date":"2026-06-27T16:00:00.000Z","value":0.00340579},{"date":"2026-06-26T16:00:01.000Z","value":0.00300451},{"date":"2026-06-25T16:00:01.000Z","value":0.00260338}]},{"id":5,"title":"Knowledge Graph","name":"kgraph","feature_category_id":3,"average":0,"data":[{"date":"2026-09-24T16:00:01.000Z","value":0.2305},{"date":"2026-09-23T16:00:01.000Z","value":0.2304},{"date":"2026-09-22T16:00:01.000Z","value":0.2294},{"date":"2026-09-21T16:00:01.000Z","value":0.2313},{"date":"2026-09-20T16:00:01.000Z","value":0.2334},{"date":"2026-09-19T16:00:01.000Z","value":0.2341},{"date":"2026-09-18T16:00:01.000Z","value":0.2369},{"date":"2026-09-17T16:00:01.000Z","value":0.2258},{"date":"2026-09-16T16:00:01.000Z","value":0.2397},{"date":"2026-09-15T16:00:02.000Z","value":0.2393},{"date":"2026-09-14T22:25:38.000Z","value":0.2342},{"date":"2026-09-13T16:00:01.000Z","value":0.143308},{"date":"2026-09-12T16:00:01.000Z","value":0.143308},{"date":"2026-09-09T16:00:01.000Z","value":0.143308},{"date":"2026-09-08T16:00:02.000Z","value":0.143308},{"date":"2026-09-07T16:00:01.000Z","value":0.143308},{"date":"2026-09-06T16:00:01.000Z","value":0.143308},{"date":"2026-09-05T16:00:00.000Z","value":0.143308},{"date":"2026-09-04T16:00:01.000Z","value":0.143308},{"date":"2026-09-03T16:00:01.000Z","value":0.143308},{"date":"2026-09-02T16:00:01.000Z","value":0.143308},{"date":"2026-09-01T16:00:01.000Z","value":0.143308},{"date":"2026-08-31T16:00:01.000Z","value":0.143308},{"date":"2026-08-30T16:00:01.000Z","value":0.143308},{"date":"2026-08-29T16:00:02.000Z","value":0.143308},{"date":"2026-08-28T16:00:00.000Z","value":0.143308},{"date":"2026-08-27T16:00:00.000Z","value":0.143308},{"date":"2026-08-26T16:00:01.000Z","value":0.0524155},{"date":"2026-08-25T16:00:01.000Z","value":0.051684},{"date":"2026-08-24T16:00:02.000Z","value":0.0528532},{"date":"2026-08-23T16:00:00.000Z","value":0.0527537},{"date":"2026-08-22T16:00:01.000Z","value":0.0528098},{"date":"2026-08-21T16:00:01.000Z","value":0.0532912},{"date":"2026-08-20T16:00:01.000Z","value":0.0519987},{"date":"2026-08-19T16:00:01.000Z","value":0.0532713},{"date":"2026-08-18T16:00:01.000Z","value":0.0521803},{"date":"2026-08-17T16:00:01.000Z","value":0.053491},{"date":"2026-08-16T16:00:01.000Z","value":0.0531614},{"date":"2026-08-15T16:00:01.000Z","value":0.0525272},{"date":"2026-08-14T16:00:01.000Z","value":0.0522294},{"date":"2026-08-13T16:00:01.000Z","value":0.0529567},{"date":"2026-08-12T16:00:01.000Z","value":0.0746678},{"date":"2026-08-11T16:00:01.000Z","value":0.0756675},{"date":"2026-08-10T16:00:01.000Z","value":0.0765},{"date":"2026-08-09T16:00:01.000Z","value":0.0759},{"date":"2026-08-08T16:00:01.000Z","value":0.076},{"date":"2026-08-07T16:00:00.000Z","value":0.0761},{"date":"2026-08-06T16:00:01.000Z","value":0.0761},{"date":"2026-08-05T16:00:01.000Z","value":0.0755},{"date":"2026-08-04T16:00:01.000Z","value":0.0755},{"date":"2026-08-03T16:00:01.000Z","value":0.0756},{"date":"2026-08-02T16:00:01.000Z","value":0.0766},{"date":"2026-08-01T16:00:01.000Z","value":0.076},{"date":"2026-07-31T16:00:01.000Z","value":0.0758},{"date":"2026-07-30T16:00:02.000Z","value":0.0749},{"date":"2026-07-29T16:00:01.000Z","value":0.077},{"date":"2026-07-28T16:00:01.000Z","value":0.0759},{"date":"2026-07-27T16:00:02.000Z","value":0.0769},{"date":"2026-07-26T16:00:01.000Z","value":0.0767077},{"date":"2026-07-25T16:00:01.000Z","value":0.0768},{"date":"2026-07-24T16:00:01.000Z","value":0.0765},{"date":"2026-07-23T16:00:01.000Z","value":0.0768},{"date":"2026-07-22T16:00:02.000Z","value":0.076},{"date":"2026-07-21T16:00:01.000Z","value":0.0763},{"date":"2026-07-20T16:00:01.000Z","value":0.0784},{"date":"2026-07-19T16:00:01.000Z","value":0.077},{"date":"2026-07-18T16:00:01.000Z","value":0.0787},{"date":"2026-07-17T16:00:01.000Z","value":0.0775},{"date":"2026-07-16T16:00:01.000Z","value":0.0778078},{"date":"2026-07-15T16:00:01.000Z","value":0.0775},{"date":"2026-07-14T16:00:01.000Z","value":0.0786},{"date":"2026-07-13T16:00:01.000Z","value":0.078},{"date":"2026-07-12T16:00:01.000Z","value":0.078},{"date":"2026-07-11T16:00:01.000Z","value":0.0773},{"date":"2026-07-10T16:00:01.000Z","value":0.0777},{"date":"2026-07-09T16:00:01.000Z","value":0.0674146},{"date":"2026-07-08T16:00:01.000Z","value":0.0682478},{"date":"2026-07-07T16:00:00.000Z","value":0.0688965},{"date":"2026-07-06T16:00:01.000Z","value":0.0686549},{"date":"2026-07-05T16:00:01.000Z","value":0.0689241},{"date":"2026-07-04T16:00:01.000Z","value":0.0677949},{"date":"2026-07-03T16:00:02.000Z","value":0.0677813},{"date":"2026-07-02T16:00:01.000Z","value":0.0683752},{"date":"2026-07-01T16:00:01.000Z","value":0.0680817},{"date":"2026-06-30T16:00:01.000Z","value":0.0676744},{"date":"2026-06-29T16:00:01.000Z","value":0.068323},{"date":"2026-06-28T16:00:01.000Z","value":0.0679476},{"date":"2026-06-27T16:00:00.000Z","value":0.0679155},{"date":"2026-06-26T16:00:01.000Z","value":0.0671007},{"date":"2026-06-25T16:00:01.000Z","value":0.0686893}]},{"id":8,"title":"Videos","name":"videos","feature_category_id":4,"average":0,"data":[{"date":"2026-09-24T16:00:01.000Z","value":0.2311},{"date":"2026-09-23T16:00:01.000Z","value":0.227},{"date":"2026-09-22T16:00:01.000Z","value":0.2182},{"date":"2026-09-21T16:00:01.000Z","value":0.2213},{"date":"2026-09-20T16:00:01.000Z","value":0.2217},{"date":"2026-09-19T16:00:01.000Z","value":0.226},{"date":"2026-09-18T16:00:01.000Z","value":0.2111},{"date":"2026-09-17T16:00:01.000Z","value":0.205},{"date":"2026-09-16T16:00:01.000Z","value":0.2233},{"date":"2026-09-15T16:00:02.000Z","value":0.2162},{"date":"2026-09-14T22:25:38.000Z","value":0.221},{"date":"2026-09-13T16:00:01.000Z","value":0.284903},{"date":"2026-09-12T16:00:01.000Z","value":0.284903},{"date":"2026-09-09T16:00:01.000Z","value":0.284903},{"date":"2026-09-08T16:00:02.000Z","value":0.284903},{"date":"2026-09-07T16:00:01.000Z","value":0.284903},{"date":"2026-09-06T16:00:01.000Z","value":0.284903},{"date":"2026-09-05T16:00:00.000Z","value":0.284903},{"date":"2026-09-04T16:00:01.000Z","value":0.284903},{"date":"2026-09-03T16:00:01.000Z","value":0.284903},{"date":"2026-09-02T16:00:01.000Z","value":0.284903},{"date":"2026-09-01T16:00:01.000Z","value":0.284903},{"date":"2026-08-31T16:00:01.000Z","value":0.284903},{"date":"2026-08-30T16:00:01.000Z","value":0.284903},{"date":"2026-08-29T16:00:02.000Z","value":0.284903},{"date":"2026-08-28T16:00:00.000Z","value":0.284903},{"date":"2026-08-27T16:00:00.000Z","value":0.284903},{"date":"2026-08-26T16:00:01.000Z","value":0.348805},{"date":"2026-08-25T16:00:01.000Z","value":0.332663},{"date":"2026-08-24T16:00:02.000Z","value":0.356917},{"date":"2026-08-23T16:00:00.000Z","value":0.362207},{"date":"2026-08-22T16:00:01.000Z","value":0.351148},{"date":"2026-08-21T16:00:01.000Z","value":0.377251},{"date":"2026-08-20T16:00:01.000Z","value":0.377386},{"date":"2026-08-19T16:00:01.000Z","value":0.380827},{"date":"2026-08-18T16:00:01.000Z","value":0.37551},{"date":"2026-08-17T16:00:01.000Z","value":0.372867},{"date":"2026-08-16T16:00:01.000Z","value":0.369299},{"date":"2026-08-15T16:00:01.000Z","value":0.367481},{"date":"2026-08-14T16:00:01.000Z","value":0.374817},{"date":"2026-08-13T16:00:01.000Z","value":0.367456},{"date":"2026-08-12T16:00:01.000Z","value":0.365223},{"date":"2026-08-11T16:00:01.000Z","value":0.416524},{"date":"2026-08-10T16:00:01.000Z","value":0.4447},{"date":"2026-08-09T16:00:01.000Z","value":0.4432},{"date":"2026-08-08T16:00:01.000Z","value":0.4548},{"date":"2026-08-07T16:00:00.000Z","value":0.4359},{"date":"2026-08-06T16:00:01.000Z","value":0.3325},{"date":"2026-08-05T16:00:01.000Z","value":0.2317},{"date":"2026-08-04T16:00:01.000Z","value":0.2061},{"date":"2026-08-03T16:00:01.000Z","value":0.4018},{"date":"2026-08-02T16:00:01.000Z","value":0.4028},{"date":"2026-08-01T16:00:01.000Z","value":0.4},{"date":"2026-07-31T16:00:01.000Z","value":0.4362},{"date":"2026-07-30T16:00:02.000Z","value":0.4098},{"date":"2026-07-29T16:00:01.000Z","value":0.3975},{"date":"2026-07-28T16:00:01.000Z","value":0.42},{"date":"2026-07-27T16:00:02.000Z","value":0.3596},{"date":"2026-07-26T16:00:01.000Z","value":0.360936},{"date":"2026-07-25T16:00:01.000Z","value":0.3501},{"date":"2026-07-24T16:00:01.000Z","value":0.3817},{"date":"2026-07-23T16:00:01.000Z","value":0.3549},{"date":"2026-07-22T16:00:02.000Z","value":0.3681},{"date":"2026-07-21T16:00:01.000Z","value":0.3804},{"date":"2026-07-20T16:00:01.000Z","value":0.385},{"date":"2026-07-19T16:00:01.000Z","value":0.4258},{"date":"2026-07-18T16:00:01.000Z","value":0.401},{"date":"2026-07-17T16:00:01.000Z","value":0.4761},{"date":"2026-07-16T16:00:01.000Z","value":0.474947},{"date":"2026-07-15T16:00:01.000Z","value":0.4759},{"date":"2026-07-14T16:00:01.000Z","value":0.4792},{"date":"2026-07-13T16:00:01.000Z","value":0.4916},{"date":"2026-07-12T16:00:01.000Z","value":0.4905},{"date":"2026-07-11T16:00:01.000Z","value":0.4899},{"date":"2026-07-10T16:00:01.000Z","value":0.4948},{"date":"2026-07-09T16:00:01.000Z","value":0.501352},{"date":"2026-07-08T16:00:01.000Z","value":0.497048},{"date":"2026-07-07T16:00:00.000Z","value":0.5},{"date":"2026-07-06T16:00:01.000Z","value":0.500701},{"date":"2026-07-05T16:00:01.000Z","value":0.500301},{"date":"2026-07-04T16:00:01.000Z","value":0.501202},{"date":"2026-07-03T16:00:02.000Z","value":0.504205},{"date":"2026-07-02T16:00:01.000Z","value":0.500551},{"date":"2026-07-01T16:00:01.000Z","value":0.502203},{"date":"2026-06-30T16:00:01.000Z","value":0.494744},{"date":"2026-06-29T16:00:01.000Z","value":0.450711},{"date":"2026-06-28T16:00:01.000Z","value":0.431202},{"date":"2026-06-27T16:00:00.000Z","value":0.428528},{"date":"2026-06-26T16:00:01.000Z","value":0.452679},{"date":"2026-06-25T16:00:01.000Z","value":0.449484}]},{"id":29,"title":"HTTPS Results","name":"https","feature_category_id":5,"average":0,"data":[{"date":"2026-09-24T16:00:01.000Z","value":0.996274},{"date":"2026-09-23T16:00:01.000Z","value":0.996315},{"date":"2026-09-22T16:00:01.000Z","value":0.99632},{"date":"2026-09-21T16:00:01.000Z","value":0.996249},{"date":"2026-09-20T16:00:01.000Z","value":0.99604},{"date":"2026-09-19T16:00:01.000Z","value":0.996015},{"date":"2026-09-18T16:00:01.000Z","value":0.996282},{"date":"2026-09-17T16:00:01.000Z","value":0.996112},{"date":"2026-09-16T16:00:01.000Z","value":0.996172},{"date":"2026-09-15T16:00:02.000Z","value":0.996138},{"date":"2026-09-14T22:25:38.000Z","value":0.995982},{"date":"2026-09-13T16:00:01.000Z","value":0.99565},{"date":"2026-09-12T16:00:01.000Z","value":0.99565},{"date":"2026-09-09T16:00:01.000Z","value":0.99565},{"date":"2026-09-08T16:00:02.000Z","value":0.99565},{"date":"2026-09-07T16:00:01.000Z","value":0.99565},{"date":"2026-09-06T16:00:01.000Z","value":0.99565},{"date":"2026-09-05T16:00:00.000Z","value":0.99565},{"date":"2026-09-04T16:00:01.000Z","value":0.99565},{"date":"2026-09-03T16:00:01.000Z","value":0.99565},{"date":"2026-09-02T16:00:01.000Z","value":0.99565},{"date":"2026-09-01T16:00:01.000Z","value":0.99565},{"date":"2026-08-31T16:00:01.000Z","value":0.99565},{"date":"2026-08-30T16:00:01.000Z","value":0.99565},{"date":"2026-08-29T16:00:02.000Z","value":0.99565},{"date":"2026-08-28T16:00:00.000Z","value":0.99565},{"date":"2026-08-27T16:00:00.000Z","value":0.99565},{"date":"2026-08-26T16:00:01.000Z","value":0.995317},{"date":"2026-08-25T16:00:01.000Z","value":0.995315},{"date":"2026-08-24T16:00:02.000Z","value":0.995439},{"date":"2026-08-23T16:00:00.000Z","value":0.995332},{"date":"2026-08-22T16:00:01.000Z","value":0.995341},{"date":"2026-08-21T16:00:01.000Z","value":0.995289},{"date":"2026-08-20T16:00:01.000Z","value":0.995371},{"date":"2026-08-19T16:00:01.000Z","value":0.995665},{"date":"2026-08-18T16:00:01.000Z","value":0.995757},{"date":"2026-08-17T16:00:01.000Z","value":0.995668},{"date":"2026-08-16T16:00:01.000Z","value":0.995493},{"date":"2026-08-15T16:00:01.000Z","value":0.995621},{"date":"2026-08-14T16:00:01.000Z","value":0.995764},{"date":"2026-08-13T16:00:01.000Z","value":0.995838},{"date":"2026-08-12T16:00:01.000Z","value":0.995915},{"date":"2026-08-11T16:00:01.000Z","value":0.995605},{"date":"2026-08-10T16:00:01.000Z","value":0.995794},{"date":"2026-08-09T16:00:01.000Z","value":0.995623},{"date":"2026-08-08T16:00:01.000Z","value":0.995574},{"date":"2026-08-07T16:00:00.000Z","value":0.995746},{"date":"2026-08-06T16:00:01.000Z","value":0.995672},{"date":"2026-08-05T16:00:01.000Z","value":0.99573},{"date":"2026-08-04T16:00:01.000Z","value":0.995697},{"date":"2026-08-03T16:00:01.000Z","value":0.99574},{"date":"2026-08-02T16:00:01.000Z","value":0.995573},{"date":"2026-08-01T16:00:01.000Z","value":0.995531},{"date":"2026-07-31T16:00:01.000Z","value":0.995556},{"date":"2026-07-30T16:00:02.000Z","value":0.995573},{"date":"2026-07-29T16:00:01.000Z","value":0.995715},{"date":"2026-07-28T16:00:01.000Z","value":0.99587},{"date":"2026-07-27T16:00:02.000Z","value":0.995967},{"date":"2026-07-26T16:00:01.000Z","value":0.995894},{"date":"2026-07-25T16:00:01.000Z","value":0.995788},{"date":"2026-07-24T16:00:01.000Z","value":0.995913},{"date":"2026-07-23T16:00:01.000Z","value":0.995923},{"date":"2026-07-22T16:00:02.000Z","value":0.995848},{"date":"2026-07-21T16:00:01.000Z","value":0.995886},{"date":"2026-07-20T16:00:01.000Z","value":0.995974},{"date":"2026-07-19T16:00:01.000Z","value":0.995823},{"date":"2026-07-18T16:00:01.000Z","value":0.995848},{"date":"2026-07-17T16:00:01.000Z","value":0.995977},{"date":"2026-07-16T16:00:01.000Z","value":0.995718},{"date":"2026-07-15T16:00:01.000Z","value":0.995859},{"date":"2026-07-14T16:00:01.000Z","value":0.995768},{"date":"2026-07-13T16:00:01.000Z","value":0.995856},{"date":"2026-07-12T16:00:01.000Z","value":0.995808},{"date":"2026-07-11T16:00:01.000Z","value":0.995809},{"date":"2026-07-10T16:00:01.000Z","value":0.995786},{"date":"2026-07-09T16:00:01.000Z","value":0.995919},{"date":"2026-07-08T16:00:01.000Z","value":0.99579},{"date":"2026-07-07T16:00:00.000Z","value":0.995708},{"date":"2026-07-06T16:00:01.000Z","value":0.995726},{"date":"2026-07-05T16:00:01.000Z","value":0.99577},{"date":"2026-07-04T16:00:01.000Z","value":0.995545},{"date":"2026-07-03T16:00:02.000Z","value":0.995782},{"date":"2026-07-02T16:00:01.000Z","value":0.995575},{"date":"2026-07-01T16:00:01.000Z","value":0.99561},{"date":"2026-06-30T16:00:01.000Z","value":0.995673},{"date":"2026-06-29T16:00:01.000Z","value":0.995694},{"date":"2026-06-28T16:00:01.000Z","value":0.995723},{"date":"2026-06-27T16:00:00.000Z","value":0.995735},{"date":"2026-06-26T16:00:01.000Z","value":0.995835},{"date":"2026-06-25T16:00:01.000Z","value":0.995773}]},{"id":6,"title":"Reviews (Stars)","name":"reviews","feature_category_id":5,"average":0,"data":[{"date":"2026-09-24T16:00:01.000Z","value":0.2792},{"date":"2026-09-23T16:00:01.000Z","value":0.2817},{"date":"2026-09-22T16:00:01.000Z","value":0.2787},{"date":"2026-09-21T16:00:01.000Z","value":0.2805},{"date":"2026-09-20T16:00:01.000Z","value":0.2778},{"date":"2026-09-19T16:00:01.000Z","value":0.2744},{"date":"2026-09-18T16:00:01.000Z","value":0.2775},{"date":"2026-09-17T16:00:01.000Z","value":0.2724},{"date":"2026-09-16T16:00:01.000Z","value":0.2909},{"date":"2026-09-15T16:00:02.000Z","value":0.294},{"date":"2026-09-14T22:25:38.000Z","value":0.2912},{"date":"2026-09-13T16:00:01.000Z","value":0.466935},{"date":"2026-09-12T16:00:01.000Z","value":0.466935},{"date":"2026-09-09T16:00:01.000Z","value":0.466935},{"date":"2026-09-08T16:00:02.000Z","value":0.466935},{"date":"2026-09-07T16:00:01.000Z","value":0.466935},{"date":"2026-09-06T16:00:01.000Z","value":0.466935},{"date":"2026-09-05T16:00:00.000Z","value":0.466935},{"date":"2026-09-04T16:00:01.000Z","value":0.466935},{"date":"2026-09-03T16:00:01.000Z","value":0.466935},{"date":"2026-09-02T16:00:01.000Z","value":0.466935},{"date":"2026-09-01T16:00:01.000Z","value":0.466935},{"date":"2026-08-31T16:00:01.000Z","value":0.466935},{"date":"2026-08-30T16:00:01.000Z","value":0.466935},{"date":"2026-08-29T16:00:02.000Z","value":0.466935},{"date":"2026-08-28T16:00:00.000Z","value":0.466935},{"date":"2026-08-27T16:00:00.000Z","value":0.466935},{"date":"2026-08-26T16:00:01.000Z","value":0.642669},{"date":"2026-08-25T16:00:01.000Z","value":0.640119},{"date":"2026-08-24T16:00:02.000Z","value":0.643925},{"date":"2026-08-23T16:00:00.000Z","value":0.63927},{"date":"2026-08-22T16:00:01.000Z","value":0.640597},{"date":"2026-08-21T16:00:01.000Z","value":0.644444},{"date":"2026-08-20T16:00:01.000Z","value":0.645712},{"date":"2026-08-19T16:00:01.000Z","value":0.644118},{"date":"2026-08-18T16:00:01.000Z","value":0.647496},{"date":"2026-08-17T16:00:01.000Z","value":0.647964},{"date":"2026-08-16T16:00:01.000Z","value":0.64622},{"date":"2026-08-15T16:00:01.000Z","value":0.640664},{"date":"2026-08-14T16:00:01.000Z","value":0.634499},{"date":"2026-08-13T16:00:01.000Z","value":0.633556},{"date":"2026-08-12T16:00:01.000Z","value":0.634574},{"date":"2026-08-11T16:00:01.000Z","value":0.624282},{"date":"2026-08-10T16:00:01.000Z","value":0.6235},{"date":"2026-08-09T16:00:01.000Z","value":0.6285},{"date":"2026-08-08T16:00:01.000Z","value":0.635},{"date":"2026-08-07T16:00:00.000Z","value":0.6398},{"date":"2026-08-06T16:00:01.000Z","value":0.6358},{"date":"2026-08-05T16:00:01.000Z","value":0.6368},{"date":"2026-08-04T16:00:01.000Z","value":0.635},{"date":"2026-08-03T16:00:01.000Z","value":0.6286},{"date":"2026-08-02T16:00:01.000Z","value":0.6331},{"date":"2026-08-01T16:00:01.000Z","value":0.6311},{"date":"2026-07-31T16:00:01.000Z","value":0.6311},{"date":"2026-07-30T16:00:02.000Z","value":0.6284},{"date":"2026-07-29T16:00:01.000Z","value":0.6353},{"date":"2026-07-28T16:00:01.000Z","value":0.6364},{"date":"2026-07-27T16:00:02.000Z","value":0.6302},{"date":"2026-07-26T16:00:01.000Z","value":0.626663},{"date":"2026-07-25T16:00:01.000Z","value":0.6245},{"date":"2026-07-24T16:00:01.000Z","value":0.6268},{"date":"2026-07-23T16:00:01.000Z","value":0.6277},{"date":"2026-07-22T16:00:02.000Z","value":0.615},{"date":"2026-07-21T16:00:01.000Z","value":0.6158},{"date":"2026-07-20T16:00:01.000Z","value":0.6123},{"date":"2026-07-19T16:00:01.000Z","value":0.6179},{"date":"2026-07-18T16:00:01.000Z","value":0.6174},{"date":"2026-07-17T16:00:01.000Z","value":0.6272},{"date":"2026-07-16T16:00:01.000Z","value":0.626763},{"date":"2026-07-15T16:00:01.000Z","value":0.6305},{"date":"2026-07-14T16:00:01.000Z","value":0.6286},{"date":"2026-07-13T16:00:01.000Z","value":0.6321},{"date":"2026-07-12T16:00:01.000Z","value":0.6259},{"date":"2026-07-11T16:00:01.000Z","value":0.632},{"date":"2026-07-10T16:00:01.000Z","value":0.6367},{"date":"2026-07-09T16:00:01.000Z","value":0.633277},{"date":"2026-07-08T16:00:01.000Z","value":0.632543},{"date":"2026-07-07T16:00:00.000Z","value":0.638794},{"date":"2026-07-06T16:00:01.000Z","value":0.630605},{"date":"2026-07-05T16:00:01.000Z","value":0.642557},{"date":"2026-07-04T16:00:01.000Z","value":0.630983},{"date":"2026-07-03T16:00:02.000Z","value":0.632159},{"date":"2026-07-02T16:00:01.000Z","value":0.640004},{"date":"2026-07-01T16:00:01.000Z","value":0.632659},{"date":"2026-06-30T16:00:01.000Z","value":0.6366},{"date":"2026-06-29T16:00:01.000Z","value":0.636546},{"date":"2026-06-28T16:00:01.000Z","value":0.627539},{"date":"2026-06-27T16:00:00.000Z","value":0.632676},{"date":"2026-06-26T16:00:01.000Z","value":0.64026},{"date":"2026-06-25T16:00:01.000Z","value":0.632522}]},{"id":14,"title":"Sitelinks","name":"sitelinks","feature_category_id":5,"average":0,"data":[{"date":"2026-09-24T16:00:01.000Z","value":0.2393},{"date":"2026-09-23T16:00:01.000Z","value":0.2432},{"date":"2026-09-22T16:00:01.000Z","value":0.2352},{"date":"2026-09-21T16:00:01.000Z","value":0.2411},{"date":"2026-09-20T16:00:01.000Z","value":0.239},{"date":"2026-09-19T16:00:01.000Z","value":0.237},{"date":"2026-09-18T16:00:01.000Z","value":0.2387},{"date":"2026-09-17T16:00:01.000Z","value":0.23},{"date":"2026-09-16T16:00:01.000Z","value":0.2456},{"date":"2026-09-15T16:00:02.000Z","value":0.2472},{"date":"2026-09-14T22:25:38.000Z","value":0.2465},{"date":"2026-09-13T16:00:01.000Z","value":0.246395},{"date":"2026-09-12T16:00:01.000Z","value":0.246395},{"date":"2026-09-09T16:00:01.000Z","value":0.246395},{"date":"2026-09-08T16:00:02.000Z","value":0.246395},{"date":"2026-09-07T16:00:01.000Z","value":0.246395},{"date":"2026-09-06T16:00:01.000Z","value":0.246395},{"date":"2026-09-05T16:00:00.000Z","value":0.246395},{"date":"2026-09-04T16:00:01.000Z","value":0.246395},{"date":"2026-09-03T16:00:01.000Z","value":0.246395},{"date":"2026-09-02T16:00:01.000Z","value":0.246395},{"date":"2026-09-01T16:00:01.000Z","value":0.246395},{"date":"2026-08-31T16:00:01.000Z","value":0.246395},{"date":"2026-08-30T16:00:01.000Z","value":0.246395},{"date":"2026-08-29T16:00:02.000Z","value":0.246395},{"date":"2026-08-28T16:00:00.000Z","value":0.246395},{"date":"2026-08-27T16:00:00.000Z","value":0.246395},{"date":"2026-08-26T16:00:01.000Z","value":0.24629},{"date":"2026-08-25T16:00:01.000Z","value":0.247723},{"date":"2026-08-24T16:00:02.000Z","value":0.246368},{"date":"2026-08-23T16:00:00.000Z","value":0.246043},{"date":"2026-08-22T16:00:01.000Z","value":0.24701},{"date":"2026-08-21T16:00:01.000Z","value":0.246867},{"date":"2026-08-20T16:00:01.000Z","value":0.2447},{"date":"2026-08-19T16:00:01.000Z","value":0.241095},{"date":"2026-08-18T16:00:01.000Z","value":0.242706},{"date":"2026-08-17T16:00:01.000Z","value":0.241181},{"date":"2026-08-16T16:00:01.000Z","value":0.243263},{"date":"2026-08-15T16:00:01.000Z","value":0.243108},{"date":"2026-08-14T16:00:01.000Z","value":0.242202},{"date":"2026-08-13T16:00:01.000Z","value":0.244836},{"date":"2026-08-12T16:00:01.000Z","value":0.246931},{"date":"2026-08-11T16:00:01.000Z","value":0.244131},{"date":"2026-08-10T16:00:01.000Z","value":0.2423},{"date":"2026-08-09T16:00:01.000Z","value":0.244},{"date":"2026-08-08T16:00:01.000Z","value":0.2452},{"date":"2026-08-07T16:00:00.000Z","value":0.2432},{"date":"2026-08-06T16:00:01.000Z","value":0.2436},{"date":"2026-08-05T16:00:01.000Z","value":0.2438},{"date":"2026-08-04T16:00:01.000Z","value":0.2441},{"date":"2026-08-03T16:00:01.000Z","value":0.2436},{"date":"2026-08-02T16:00:01.000Z","value":0.2424},{"date":"2026-08-01T16:00:01.000Z","value":0.2422},{"date":"2026-07-31T16:00:01.000Z","value":0.2447},{"date":"2026-07-30T16:00:02.000Z","value":0.2441},{"date":"2026-07-29T16:00:01.000Z","value":0.2431},{"date":"2026-07-28T16:00:01.000Z","value":0.2424},{"date":"2026-07-27T16:00:02.000Z","value":0.2415},{"date":"2026-07-26T16:00:01.000Z","value":0.241524},{"date":"2026-07-25T16:00:01.000Z","value":0.2443},{"date":"2026-07-24T16:00:01.000Z","value":0.2404},{"date":"2026-07-23T16:00:01.000Z","value":0.2435},{"date":"2026-07-22T16:00:02.000Z","value":0.2396},{"date":"2026-07-21T16:00:01.000Z","value":0.2443},{"date":"2026-07-20T16:00:01.000Z","value":0.244},{"date":"2026-07-19T16:00:01.000Z","value":0.2427},{"date":"2026-07-18T16:00:01.000Z","value":0.2449},{"date":"2026-07-17T16:00:01.000Z","value":0.2457},{"date":"2026-07-16T16:00:01.000Z","value":0.243624},{"date":"2026-07-15T16:00:01.000Z","value":0.2435},{"date":"2026-07-14T16:00:01.000Z","value":0.2425},{"date":"2026-07-13T16:00:01.000Z","value":0.2418},{"date":"2026-07-12T16:00:01.000Z","value":0.2423},{"date":"2026-07-11T16:00:01.000Z","value":0.244},{"date":"2026-07-10T16:00:01.000Z","value":0.2435},{"date":"2026-07-09T16:00:01.000Z","value":0.244616},{"date":"2026-07-08T16:00:01.000Z","value":0.24347},{"date":"2026-07-07T16:00:00.000Z","value":0.243741},{"date":"2026-07-06T16:00:01.000Z","value":0.242094},{"date":"2026-07-05T16:00:01.000Z","value":0.242637},{"date":"2026-07-04T16:00:01.000Z","value":0.244142},{"date":"2026-07-03T16:00:02.000Z","value":0.243993},{"date":"2026-07-02T16:00:01.000Z","value":0.244869},{"date":"2026-07-01T16:00:01.000Z","value":0.245094},{"date":"2026-06-30T16:00:01.000Z","value":0.242266},{"date":"2026-06-29T16:00:01.000Z","value":0.242737},{"date":"2026-06-28T16:00:01.000Z","value":0.243671},{"date":"2026-06-27T16:00:00.000Z","value":0.245517},{"date":"2026-06-26T16:00:01.000Z","value":0.245068},{"date":"2026-06-25T16:00:01.000Z","value":0.244318}]}],
+      keywords: [],
+      fields: [
+        {
+          key: 'name',
+          sortable: true,
+          thClass: 'py-2 background-white',
+        },
+        {
+          key: 'prevalence',
+          sortable: true,
+          thClass: 'py-2 background-white',
+        },
+        {
+          key: 'history',
+          sortable: false,
+          thClass: 'py-2 background-white',
+        },
+      ]
+    },
+    computed: {
+      items() {
+        return this.features.map(e => ({
+          name: e.title,
+          prevalence: Math.round(e.data[0].value * 1000) / 10,
+          history: e.data,
+        }))
+      },
+    },
+    methods: {
+      chartOptions(data) {
+        return {
+          chart: {
+            width: 300,
+            height: 24,
+            backgroundColor: null,
+            borderWidth: 0,
+            margin: [2, 0, 2, 0],
+            style: {
+              overflow: 'visible'
+            },
+            // small optimalization, saves 1-2 ms each sparkline
+            skipClone: true
+          },
+          title: false,
+          xAxis: {
+            reversed: true,
+            type: 'datetime',
+            labels: {
+              enabled: false
+            },
+            title: {
+              text: null
+            },
+            startOnTick: false,
+            endOnTick: false,
+            tickPositions: []
+          },
+          yAxis: {
+            endOnTick: false,
+            startOnTick: false,
+            labels: {
+              enabled: false
+            },
+            title: {
+              text: null
+            },
+            tickPositions: [0]
+          },
+          legend: {
+            enabled: false
+          },
+          tooltip: {
+            hideDelay: 0,
+            outside: true,
+            shared: true,
+            formatter: function() {
+              date = new Date(data[this.points[0].point.index].date);
+              return Highcharts.dateFormat('%b %e', date) + ': ' + (Math.round(this.y*100)/100) + '%';
+            }
+          },
+          credits: {
+            enabled: false
+          },
+          plotOptions: {
+            series: {
+              pointIntervalUnit: 'day',
+              animation: false,
+              lineWidth: 2,
+              shadow: false,
+              states: {
+                hover: {
+                  lineWidth: 2
+                }
+              },
+              marker: {
+                radius: 0,
+                states: {
+                  hover: {
+                    radius: 2
+                  }
+                }
+              },
+            }
+          },
+          colors: ['#4dbdeb'],
+          series: [{
+            data: data.map(e => [e.date, Math.round(e.value * 1000) / 10])
+          }]
+        }
+      },
+    },
+  });
+</script>
